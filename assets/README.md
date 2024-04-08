@@ -18,9 +18,11 @@ Textstorlekar finns i figma-dokumnetet under components för respektive storlek,
 
 ## Svg - filer
 
+Båda svg filerna har hover och active effekter, finns i figma under components.
+
 Enklast att bara kopiera in koden från svg filerna i html,
 
-instruktioner för att styla logotypen i css finns i figma-dokumentet under components - dekstop:
+Instruktioner för att styla logotypen i css finns i figma-dokumentet under components - dekstop:
 
 ### För telefon-svg filen som används i mobile:
 
@@ -28,6 +30,18 @@ Lägg den i en button (användarvänligt :). För att styla svg filen, ge den en
 path {fill: #000000;}
 eller liknande på denna filen.
 
-## stars bild
+## Stars bild
 
 För att göra det enkelt. Det är bara en bild och den är 5 stjärnor för att pizzerian är fantastisk. Så bara lägg in den och ändra storlek på den i css beroende på om det är mobile, tablet eller desktop.
+
+## Buttons:
+
+Finns specs i figmafilen. Inactive kommer bara användas för knappen för Hemleverans. Hover används för alla knappar.
+
+## Links
+
+Finns specs i figmafilen, hover och active används på alla länkar.
+
+## input:
+
+Finns specs i figmafilen, active används.
