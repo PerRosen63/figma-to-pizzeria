@@ -14,7 +14,19 @@ https://fonts.google.com/share?selection.family=Courgette|Merienda:wght@300..900
 
 Klicka på Select all styles, sen View selected families så har ni alternativ för att ta in typsnitten i projektet.
 
+Textstorlekar finns i figma-dokumnetet under components för respektive storlek, dvs mobile, tablet, desktop.
+
 ## Svg - filer
+
+Enklast att bara kopiera in koden från svg filerna i html,
+
+instruktioner för att styla logotypen i css finns i figma-dokumentet under components - dekstop:
+
+### För telefon-svg filen som används i mobile:
+
+Lägg den i en button (användarvänligt :). För att styla svg filen, ge den en egen klass eller id, och sen på liknande sätt som logotypen styla path. Behövs bara
+path {fill: #000000;}
+eller liknande på denna filen.
 
 ## stars bild
 
