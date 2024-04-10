@@ -52,7 +52,7 @@ Finns specs i figmafilen, active används.
 
 ## Skalning mellan enheter
 
-Under 1440 px bredd övergår designen till tablet-läge. Under 834 px bredd övergår designen till mobile-läge.
+Under 1440 px bredd övergår designen till tablet-läge. Under 834 px bredd övergår designen till mobile-läge. Maximal bredd på designen är 1920 px. Vid upplösningar över detta så centreras innehållet på skärmen. Den vita färgen i header (navigationen) och footer (copyright) och den blå färgen #2175D8 fyller ut hela bredden oavsett upplösning.
 
 ## Meny-sektionen (alltså menyn för mat, INTE nav)
 
