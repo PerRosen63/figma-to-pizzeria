@@ -1,0 +1,10 @@
+main,
+header,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+section {
+  grid-template-columns: repeat(12, 1fr);
+}
