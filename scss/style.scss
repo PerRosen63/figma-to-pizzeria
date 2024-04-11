@@ -1,0 +1,12 @@
+@import "reset";
+@import "colors";
+
+@import "mobile";
+
+@media screen and (min-width: 768px) {
+  @import "tablet";
+}
+
+@media screen and (min-width: 1024px) {
+  @import "desktop";
+}
