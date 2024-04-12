@@ -76,4 +76,29 @@ Section Footer
 /* 
 Cookie
 */
+#cookieContainer {
+  background-color: $whiteSecondary;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+#cookie {
+  background-color: $bluePrimary;
+  color: $whiteSecondary;
+  padding: 20px;
+}
+#cookie p {
+  margin-bottom: 10px;
+}
+#cookie button {
+  margin-right: 10px;
+}
+#rejectButton {
+  background-color: $redSecondary;
+  color: $whiteSecondary;
+}
+#acceptButton {
+  background-color: $greenPrimary;
+  color: $whiteSecondary;
+}
+
 // Anna
