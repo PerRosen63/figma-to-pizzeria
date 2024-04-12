@@ -1,9 +1,10 @@
 export function createCookieBar() {
+    let cookieContainer = document.getElementById('cookieContainer');
     let cookieBar = document.getElementById('cookie');
 
 
     function hideCookieBar() {
-        cookieBar.style.display = 'none';
+        cookieContainer.style.display = 'none';
     }
 
     let message = document.createElement('p');
