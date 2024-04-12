@@ -1,0 +1,79 @@
+h1,
+h2,
+h3 {
+  font-family: "Courgette", cursive;
+}
+h4,
+h5,
+h6,
+p {
+  font-family: "Merienda", cursive;
+}
+
+//smooth scroll
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $whiteHoverActive;
+}
+
+main,
+header,
+footer {
+  display: grid;
+  padding: 5px 10px;
+}
+
+header,
+footer {
+  background-color: $whiteSecondary;
+}
+
+main {
+  background-color: $bluePrimary;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  background-color: $yellowPrimary;
+  margin: 5px 0;
+}
+
+/* 
+Header
+*/
+// Per
+
+/* 
+Section One
+*/
+// Jessika
+
+/* 
+Section Two
+*/
+// Anna
+
+/* 
+Section Three
+*/
+// Per
+
+/* 
+Section Food Menu
+*/
+// ?
+
+/* 
+Section Footer
+*/
+// Per
+
+/* 
+Cookie
+*/
+// Anna
