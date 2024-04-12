@@ -188,13 +188,11 @@ Cookie
   border-radius: 10px;
   position: relative;
 }
-
 #cookie p {
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
 }
-
 #cookie button {
   margin-left: auto;
   margin-right: 10px;
@@ -204,8 +202,7 @@ Cookie
   border-radius: 12px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
-
-#rejectButton {
+#cookie #rejectButton {
   background-color: #af302c;
   color: #ffffff;
   transition: background-color 0.3s;
@@ -214,11 +211,10 @@ Cookie
   right: 162px;
   z-index: 0;
 }
-#rejectButton:hover {
+#cookie #rejectButton:hover {
   background-color: #872522;
 }
-
-#acceptButton {
+#cookie #acceptButton {
   background-color: #24660f;
   color: #ffffff;
   transition: background-color 0.3s;
@@ -227,7 +223,7 @@ Cookie
   right: 10px;
   z-index: 0;
 }
-#acceptButton:hover {
+#cookie #acceptButton:hover {
   background-color: #1c500c;
 }
 
