@@ -97,18 +97,22 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
   .logotype svg {
     display: block;
     width: 80px;
     height: 80px;
   }
-  .logotype svg:hover g path,
-  .logotype svg:hover g#georgiosText path:nth-child(-n + 3),
-  .logotype svg:hover g#pizzeriaText path:first-child,
-  .logotype svg:hover g#year1992LogoGroup path:first-child {
+  .logotype svg:active g path,
+  .logotype svg:active g#georgiosText path:nth-child(-n + 3),
+  .logotype svg:active g#pizzeriaText path:first-child,
+  .logotype svg:active g#sedanLogoGroup path:first-child,
+  .logotype svg:active g#year1992LogoGroup path:first-child {
     fill: $whiteSecondary;
   }
-  .logotype svg:hover g path:first-child {
+  .logotype svg:active g path:first-child {
     fill: $greenPrimary;
   }
   .nav-container {
