@@ -1,5 +1,5 @@
 //Hide, but not for  screen readers
-.hidden {
+@mixin hidden {
   border: 0;
   padding: 0;
   margin: 0;
@@ -23,14 +23,27 @@ Font family
 
 h1,
 h2,
-h3 {
-  font-family: "Courgette", cursive;
-}
+h3,
 h4,
 h5,
 h6,
+li {
+  font-family: "Courgette", cursive;
+}
+
 p {
   font-family: "Merienda", cursive;
+}
+
+h1,
+h2,
+h3,
+li {
+  color: $bluePrimary;
+}
+
+p {
+  color: $blackSecondary;
 }
 
 //smooth scroll
@@ -45,7 +58,7 @@ body {
 main,
 header,
 footer {
-  display: grid;
+  display: flex;
   padding: 5px 10px;
 }
 
@@ -56,6 +69,7 @@ footer {
 
 main {
   background-color: $bluePrimary;
+  flex-direction: column;
 }
 
 section {
@@ -69,7 +83,57 @@ section {
 /* 
 Header
 */
-// Per
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .logotype svg {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  .logotype svg:hover g path,
+  .logotype svg:hover g#georgiosText path:nth-child(-n + 3),
+  .logotype svg:hover g#pizzeriaText path:first-child,
+  .logotype svg:hover g#year1992LogoGroup path:first-child {
+    fill: $whiteSecondary;
+  }
+  .logotype svg:hover g path:first-child {
+    fill: $greenPrimary;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+  .phone-icon {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 30px;
+    background: transparent;
+    svg {
+      width: 50px;
+      height: 50px;
+      border: 3px solid $bluePrimary;
+      border-radius: 50%;
+      padding: 2px 2px 0 0;
+    }
+  }
+  .phone-icon:active svg {
+    border-color: $greenPrimary;
+    background-color: $greenPrimary !important;
+  }
+  .phone-icon:active svg path {
+    fill: $whiteSecondary;
+  }
+}
 
 /* 
 Section One
@@ -125,3 +189,9 @@ Cookie
 }
 
 // Anna
+
+@media screen and (max-width: 767px) {
+  .hidden {
+    @include hidden;
+  }
+}
