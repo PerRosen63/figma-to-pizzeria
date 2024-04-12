@@ -89,7 +89,9 @@ Cookie
   position: relative;
 }
 #cookie p {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
 #cookie button {
   margin-left: auto;
@@ -104,6 +106,10 @@ Cookie
   background-color: $redSecondary;
   color: $whiteSecondary;
   transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px;
+  right: 162px;
+  z-index: 0;
 
   &:hover {
     background-color: $redHover;
@@ -113,6 +119,10 @@ Cookie
   background-color: $greenPrimary;
   color: $whiteSecondary;
   transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 0;
 
   &:hover {
     background-color: $greenHover;

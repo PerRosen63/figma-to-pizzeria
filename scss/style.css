@@ -183,7 +183,9 @@ Cookie
 }
 
 #cookie p {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 #cookie button {
@@ -200,6 +202,10 @@ Cookie
   background-color: #af302c;
   color: #ffffff;
   transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px;
+  right: 162px;
+  z-index: 0;
 }
 #rejectButton:hover {
   background-color: #872522;
@@ -209,6 +215,10 @@ Cookie
   background-color: #24660f;
   color: #ffffff;
   transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 0;
 }
 #acceptButton:hover {
   background-color: #1c500c;
