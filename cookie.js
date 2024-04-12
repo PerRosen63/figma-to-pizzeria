@@ -11,10 +11,12 @@ export function createCookieBar() {
     message.textContent = 'Välkommen till Georgios Pizzeria! För den bästa upplevelsen på vår hemsida rekommenderar vi att du godkänner cookies.'; 
 
     let acceptButton = document.createElement('button');
+    acceptButton.id = 'acceptButton';
     acceptButton.textContent = 'Acceptera';
     acceptButton.addEventListener('click', hideCookieBar);
 
     let rejectButton = document.createElement('button');
+    rejectButton.id = 'rejectButton';
     rejectButton.textContent = 'Neka';
     rejectButton.addEventListener('click', hideCookieBar);
 
