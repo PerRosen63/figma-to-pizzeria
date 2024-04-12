@@ -78,7 +78,7 @@ Cookie
 */
 #cookieContainer {
   background-color: $whiteSecondary;
-  padding: 10px;
+  padding-top: 10px;
   border-radius: 10px 10px 0 0;
 }
 #cookie {
@@ -94,20 +94,29 @@ Cookie
 #cookie button {
   margin-left: auto;
   margin-right: 10px;
-  width: 150px;
+  width: 142px;
   height: 40px;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 1px;
+  border: none;
+  border-radius: 12px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 #rejectButton {
   background-color: $redSecondary;
   color: $whiteSecondary;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $redHover;
+  }
 }
 #acceptButton {
   background-color: $greenPrimary;
   color: $whiteSecondary;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $greenHover;
+  }
 }
 
 // Anna

@@ -170,7 +170,7 @@ Cookie
 */
 #cookieContainer {
   background-color: #ffffff;
-  padding: 10px;
+  padding-top: 10px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -189,22 +189,29 @@ Cookie
 #cookie button {
   margin-left: auto;
   margin-right: 10px;
-  width: 150px;
+  width: 142px;
   height: 40px;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 1px;
+  border: none;
+  border-radius: 12px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
 #rejectButton {
   background-color: #af302c;
   color: #ffffff;
+  transition: background-color 0.3s;
+}
+#rejectButton:hover {
+  background-color: #872522;
 }
 
 #acceptButton {
   background-color: #24660f;
   color: #ffffff;
+  transition: background-color 0.3s;
+}
+#acceptButton:hover {
+  background-color: #1c500c;
 }
 
 /* 
