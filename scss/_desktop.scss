@@ -19,6 +19,9 @@ Header
   }
   li:nth-child(5) {
     justify-self: end;
+    span {
+      padding: 0 10px;
+    }
   }
 }
 /* 

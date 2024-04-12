@@ -30,10 +30,7 @@ header {
       span {
         background-color: $bluePrimary;
         color: $whiteSecondary;
-        //font-size: 1.25rem;
-        border: 6px solid white;
-        border-radius: 15px;
-        padding: 5px;
+        border-radius: 10px;
       }
     }
   }
@@ -49,6 +46,10 @@ header {
     padding-top: 10% !important;
     li:nth-child(5) {
       grid-column: 4 / 5;
+      span {
+        font-size: 1.25rem;
+        padding: 5px;
+      }
     }
   }
 }
