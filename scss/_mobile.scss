@@ -170,6 +170,15 @@ Section Food Menu
 /* 
 Section Footer
 */
+footer {
+  border-bottom: 1px solid black;
+  p {
+    color: $bluePrimary;
+  }
+  span {
+    text-transform: uppercase;
+  }
+}
 // Per
 
 /* 
