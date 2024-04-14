@@ -116,6 +116,9 @@ header {
   .logotype svg:active g path:first-child {
     fill: $greenPrimary;
   }
+  .logotype span {
+    @include hidden;
+  }
   .nav-container {
     display: flex;
     flex-direction: row;
