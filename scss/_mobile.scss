@@ -82,6 +82,7 @@ main {
 }
 
 section {
+  height: calc(100vh - 12px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
@@ -216,6 +217,9 @@ Cookie
 // Anna
 
 @media screen and (max-width: 767px) {
+  html {
+    scroll-padding-top: 100px;
+  }
   .hidden {
     @include hidden;
   }
