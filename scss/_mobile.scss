@@ -85,28 +85,63 @@ Section Footer
 Cookie
 */
 #cookieContainer {
+  position: fixed;
+  bottom: 100px;
+  left: 10px;
+  right: 10px;
+  width: 95vw;
   background-color: $whiteSecondary;
   padding: 10px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 10px;
 }
 #cookie {
   background-color: $bluePrimary;
   color: $whiteSecondary;
   padding: 20px;
-}
-#cookie p {
-  margin-bottom: 10px;
-}
-#cookie button {
-  margin-right: 10px;
-}
-#rejectButton {
-  background-color: $redSecondary;
-  color: $whiteSecondary;
-}
-#acceptButton {
-  background-color: $greenPrimary;
-  color: $whiteSecondary;
-}
+  border-radius: 10px;
+  position: relative;
 
+  p {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+  button {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 142px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+  #rejectButton {
+    background-color: $redSecondary;
+    color: $whiteSecondary;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 10px;
+    right: 162px;
+    z-index: 0;
+
+    &:hover {
+      background-color: $redHover;
+    }
+  }
+  #acceptButton {
+    background-color: $greenPrimary;
+    color: $whiteSecondary;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 0;
+
+    &:hover {
+      background-color: $greenHover;
+    }
+  }
+}
 // Anna
