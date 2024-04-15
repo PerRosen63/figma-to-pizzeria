@@ -82,7 +82,7 @@ main {
 }
 
 section {
-  height: calc(100vh - 12px);
+  //height: calc(100vh - 12px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
@@ -168,6 +168,21 @@ Section Two
 /* 
 Section Three
 */
+.section-three {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  .contact-box {
+    background-color: $greenPrimary;
+    border-radius: 10px;
+  }
+  .quote-box {
+    margin-top: 10px;
+    background: $greenPrimary url(assets/ChickenTaco_1400.jpg) no-repeat right
+      top;
+    background-size: cover;
+  }
+}
 // Per
 
 /* 
@@ -215,7 +230,7 @@ Cookie
     margin-bottom: 40px;
     position: relative;
     z-index: 1;
-}
+  }
   button {
     margin-left: auto;
     margin-right: 10px;
@@ -224,7 +239,7 @@ Cookie
     border: none;
     border-radius: 12px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-}
+  }
   #rejectButton {
     background-color: $redSecondary;
     color: $whiteSecondary;
