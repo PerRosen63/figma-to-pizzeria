@@ -169,33 +169,62 @@ Section Footer
 Cookie
 */
 #cookieContainer {
+  position: fixed;
+  bottom: 100px;
+  left: 10px;
+  right: 10px;
+  width: 95vw;
   background-color: #ffffff;
   padding: 10px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 10px;
 }
 
 #cookie {
   background-color: #2175d8;
   color: #ffffff;
   padding: 20px;
+  border-radius: 10px;
+  position: relative;
 }
-
 #cookie p {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
-
 #cookie button {
+  margin-left: auto;
   margin-right: 10px;
+  width: 142px;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
-
-#rejectButton {
+#cookie #rejectButton {
   background-color: #af302c;
   color: #ffffff;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px;
+  right: 162px;
+  z-index: 0;
 }
-
-#acceptButton {
+#cookie #rejectButton:hover {
+  background-color: #872522;
+}
+#cookie #acceptButton {
   background-color: #24660f;
   color: #ffffff;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 0;
+}
+#cookie #acceptButton:hover {
+  background-color: #1c500c;
 }
 
 /* 
