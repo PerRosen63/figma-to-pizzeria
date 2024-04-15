@@ -23,8 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
-# ignore style-min.css
-style-min.css
-
 # ignore style.css.map
-style.css.map
+*.css.map
+
+# ignore style-min.css
+*-min.css
+
+# ignore css
+*.css
