@@ -236,11 +236,8 @@ Section Three
         background-color: $greenPrimary;
         padding: 10px;
         margin-left: 20px;
-        border-top-left-radius: 25%;
+        border-top-left-radius: 25px;
         svg {
-          display: block;
-          width: 80px;
-          height: 80px;
           g path,
           g#georgiosText path:nth-child(-n + 3),
           g#pizzeriaText path:first-child,

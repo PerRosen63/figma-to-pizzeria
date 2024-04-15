@@ -69,6 +69,54 @@ Section Two
 /* 
 Section Three
 */
+
+.section-three {
+  .contact-box,
+  .quote-box {
+    padding: 25px;
+  }
+  .contact-box {
+    border-radius: 10px 10px 0 0;
+    justify-content: space-around;
+    padding-bottom: 0;
+    .contact-box-column {
+      text-align: center;
+      p {
+        font-size: 1.25rem;
+        line-height: 2;
+      }
+    }
+  }
+  .quote-box {
+    border-radius: 0 0 10px 10px;
+    margin-top: 0;
+    .quote-box-bg-img {
+      padding-left: 50px;
+      padding-top: 50px;
+      margin: 0;
+      height: 50vh;
+      .quote {
+        align-self: flex-start;
+        .quote-bubble {
+          padding: 25px;
+          p {
+            font-size: 1.25rem;
+          }
+          .rating {
+            margin-top: 10px;
+            img {
+              width: 140px;
+            }
+          }
+        }
+        .quote-shape {
+          border-bottom: 35px solid rgba(0, 0, 0, 0.7);
+          border-right: 35px solid transparent;
+        }
+      }
+    }
+  }
+}
 // Per
 
 /* 
