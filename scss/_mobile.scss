@@ -36,8 +36,8 @@ main {
 }
 
 section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  //display: grid;
+  //grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
   background-color: $yellowPrimary;
   margin: 5px 0;
@@ -52,6 +52,72 @@ Header
 Section One
 */
 // Jessika
+.title-section  {
+  .title-card {
+    background-color: 474747;
+    opacity: 80%;
+    border-radius: 21px;
+    .meal-push {
+      text-transform: uppercase;
+    }
+  }
+  .food-menu-btn {
+    background-color: #2175d8;
+    border-radius: 12px;
+  }
+  .grilled {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.tiled-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .pizza {
+    grid-column: 1 / span 1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 10px 6.5px 6.5px 10px;
+  }
+  .souvlaki {
+    grid-column: 2 / span 1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 10px 10px 6.5px 6.5px;
+  }
+  .hamburger {
+    grid-column: 1 / span 1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 6.5px 6.5px 6.5px 10px;
+  }
+  .kebab {
+    grid-column: 2 / span 1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 6.5px 10px 6.5px 6.5px;
+  }
+  .falafel {
+    grid-column: 1 / span 1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 6.5px 6.5 px 10px 10px;
+  }
+  .lambchop {
+    grid-column: 2 / span 1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 6.5px 10px 10px 6.5px;
+  }
+}
 
 /* 
 Section Two
