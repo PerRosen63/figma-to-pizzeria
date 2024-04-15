@@ -181,6 +181,9 @@ Section Three
   .contact-box {
     background-color: $greenPrimary;
     border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
   }
   .quote-box {
     margin-top: 10px;
@@ -193,7 +196,7 @@ Section Three
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: flex-end;
       padding-left: 20px;
       padding-top: 50px;
       .quote {
