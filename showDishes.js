@@ -42,6 +42,11 @@ export function showDishes() {
 }
 
 function createDishContainer(dish) {
+    let container = document.createElement('div');
+    let heading = document.createElement('h2');
+    heading.textContent = 'Våra kunder rekommenderar';
+    container.appendChild(heading);
+    
     let dishContainer = document.createElement('div');
     dishContainer.classList.add('dish');
 
