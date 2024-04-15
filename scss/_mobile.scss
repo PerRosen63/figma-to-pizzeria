@@ -17,17 +17,28 @@
   /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }
 
-/* 
-Link style
-*/
+/***************** 
+Shared css
+******************/
+
+// Hide span ""alt" text
+.logotype {
+  span {
+    @include hidden;
+  }
+  // Svg display
+  svg {
+    display: block;
+  }
+}
+
+// Link style
 
 a {
   text-decoration: none;
 }
 
-/* 
-Font family
-*/
+// Font family
 
 h1,
 h2,
@@ -101,11 +112,6 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  .logotype svg {
-    display: block;
-    width: 80px;
-    height: 80px;
-  }
   .logotype svg:active g path,
   .logotype svg:active g#georgiosText path:nth-child(-n + 3),
   .logotype svg:active g#pizzeriaText path:first-child,
@@ -115,9 +121,6 @@ header {
   }
   .logotype svg:active g path:first-child {
     fill: $greenPrimary;
-  }
-  .logotype span {
-    @include hidden;
   }
   .nav-container {
     display: flex;
@@ -339,10 +342,21 @@ Cookie
 }
 // Anna
 
+/**
+Max width 767px
+*/
+
 @media screen and (max-width: 767px) {
+  // Sticky header top padding
   html {
     scroll-padding-top: 100px;
   }
+  // Logo size
+  .logotype svg {
+    width: 80px;
+    height: 80px;
+  }
+  // Hidden in mobile
   .hidden {
     @include hidden;
   }
