@@ -1,13 +1,58 @@
+//Hide, but not for  screen readers
+@mixin hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px);
+  /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(50%);
+  /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap;
+  /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+/* 
+Link style
+*/
+
+a {
+  text-decoration: none;
+}
+
+/* 
+Font family
+*/
+
 h1,
 h2,
-h3 {
-  font-family: "Courgette", cursive;
-}
+h3,
 h4,
 h5,
 h6,
+li {
+  font-family: "Courgette", cursive;
+}
+
 p {
   font-family: "Merienda", cursive;
+}
+
+h1,
+h2,
+h3,
+li,
+a {
+  color: $bluePrimary;
+}
+
+p {
+  color: $blackSecondary;
 }
 
 //smooth scroll
@@ -22,7 +67,7 @@ body {
 main,
 header,
 footer {
-  display: grid;
+  display: flex;
   padding: 5px 10px;
 }
 
@@ -33,9 +78,11 @@ footer {
 
 main {
   background-color: $bluePrimary;
+  flex-direction: column;
 }
 
 section {
+  height: calc(100vh - 12px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
@@ -46,7 +93,67 @@ section {
 /* 
 Header
 */
-// Per
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  .logotype svg {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  .logotype svg:active g path,
+  .logotype svg:active g#georgiosText path:nth-child(-n + 3),
+  .logotype svg:active g#pizzeriaText path:first-child,
+  .logotype svg:active g#sedanLogoGroup path:first-child,
+  .logotype svg:active g#year1992LogoGroup path:first-child {
+    fill: $whiteSecondary;
+  }
+  .logotype svg:active g path:first-child {
+    fill: $greenPrimary;
+  }
+  .logotype span {
+    @include hidden;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+  .phone-icon {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+    background: transparent;
+    svg {
+      width: 50px;
+      height: 50px;
+      border: 3px solid $bluePrimary;
+      border-radius: 50%;
+      padding: 2px 2px 0 0;
+    }
+  }
+  .phone-icon:active svg {
+    border-color: $greenPrimary;
+    background-color: $greenPrimary !important;
+  }
+  .phone-icon:active svg path {
+    fill: $whiteSecondary;
+  }
+}
 
 /* 
 Section One
@@ -71,6 +178,15 @@ Section Food Menu
 /* 
 Section Footer
 */
+footer {
+  border-bottom: 1px solid black;
+  p {
+    color: $bluePrimary;
+  }
+  span {
+    text-transform: uppercase;
+  }
+}
 // Per
 
 /* 
@@ -137,3 +253,12 @@ Cookie
   }
 }
 // Anna
+
+@media screen and (max-width: 767px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+  .hidden {
+    @include hidden;
+  }
+}

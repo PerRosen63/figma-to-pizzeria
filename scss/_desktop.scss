@@ -12,8 +12,28 @@ section {
 /* 
 Header
 */
-// Per
-
+.logotype svg:hover g path,
+.logotype svg:hover g#georgiosText path:nth-child(-n + 3),
+.logotype svg:hover g#pizzeriaText path:first-child,
+.logotype svg:hover g#sedanLogoGroup path:first-child,
+.logotype svg:hover g#year1992LogoGroup path:first-child {
+  fill: $blueHover;
+}
+.logotype svg:hover g path:first-child {
+  fill: $whiteSecondary;
+}
+.nav-list {
+  grid-template-columns: repeat(5, 1fr);
+  li:nth-child(4) {
+    padding-left: 20px;
+  }
+  li:nth-child(5) {
+    justify-self: end;
+    span {
+      padding: 0 10px;
+    }
+  }
+}
 /* 
 Section One
 */

@@ -1,3 +1,6 @@
+html {
+  scroll-padding-top: 12px;
+}
 main,
 header,
 footer {
@@ -5,6 +8,7 @@ footer {
 }
 
 section {
+  height: calc(100vh - 24px);
   margin: 12.5px 0;
   grid-template-columns: repeat(6, 1fr);
 }
@@ -12,6 +16,48 @@ section {
 /* 
 Header
 */
+header {
+  position: static;
+  .logotype svg {
+    width: 193px;
+    height: 193px;
+  }
+  .nav-list {
+    display: grid !important;
+    align-items: center;
+    li {
+      display: grid;
+      white-space: nowrap;
+      justify-items: center;
+    }
+    li:nth-child(5) {
+      height: fit-content;
+      span {
+        background-color: $bluePrimary;
+        color: $whiteSecondary;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.phone-icon {
+  @include hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 50px;
+    padding-top: 10% !important;
+    li:nth-child(5) {
+      grid-column: 4 / 5;
+      span {
+        font-size: 1.25rem;
+        padding: 5px;
+      }
+    }
+  }
+}
 // Per
 
 /* 
