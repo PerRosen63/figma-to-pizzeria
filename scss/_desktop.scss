@@ -47,6 +47,15 @@ Section Two
 /* 
 Section Three
 */
+.section-three {
+  .quote-box .quote-box-bg-img {
+    padding-left: 100px;
+    padding-top: 100px;
+    .quote .quote-bubble p {
+      font-size: 1.375rem;
+    }
+  }
+}
 // Per
 
 /* 
