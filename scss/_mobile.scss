@@ -52,70 +52,128 @@ Header
 Section One
 */
 // Jessika
-.title-section  {
+
+.title-section {
+  background-image: url("/assets/grilled.jpg");
+  background-size: cover;
+  margin-left: -10px;
+  margin-right: -10px;
+
   .title-card {
-    background-color: 474747;
+    background-color: #474747;
     opacity: 80%;
+    color: #FFFFFF;
     border-radius: 21px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    
     .meal-push {
       text-transform: uppercase;
+      font-size: 0.75rem;
+      margin-left: 15px;
+      margin-right: 15px;
     }
   }
   .food-menu-btn {
-    background-color: #2175d8;
+    background-color: #2175D8;
+    color: #FFFFFF;
     border-radius: 12px;
-  }
-  .grilled {
-    width: 100%;
-    object-fit: cover;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
+
 
 .tiled-imgs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  .pizza {
-    grid-column: 1 / span 1;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  .pizza-container {
     padding: 10px 6.5px 6.5px 10px;
-  }
-  .souvlaki {
-    grid-column: 2 / span 1;
     width: 100%;
+    height: 135px;
     object-fit: cover;
-    border-radius: 10px;
+
+    .pizza {
+      grid-column: 1 / span 1;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .souvlaki-container {
     padding: 10px 10px 6.5px 6.5px;
-  }
-  .hamburger {
-    grid-column: 1 / span 1;
     width: 100%;
+    height: 135px;
     object-fit: cover;
-    border-radius: 10px;
+    
+
+    .souvlaki {
+      grid-column: 2 / span 1;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .hamburger-container {
     padding: 6.5px 6.5px 6.5px 10px;
-  }
-  .kebab {
-    grid-column: 2 / span 1;
     width: 100%;
+    height: 135px;
     object-fit: cover;
-    border-radius: 10px;
+  
+    .hamburger {
+      grid-column: 1 / span 1;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .kebab-container {
     padding: 6.5px 10px 6.5px 6.5px;
-  }
-  .falafel {
-    grid-column: 1 / span 1;
     width: 100%;
+    height: 135px;
     object-fit: cover;
-    border-radius: 10px;
-    padding: 6.5px 6.5 px 10px 10px;
+  
+    .kebab {
+      grid-column: 2 / span 1;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
   }
-  .lambchop {
-    grid-column: 2 / span 1;
+  .falafel-container {
+    padding: 6.5px 6.5px 10px 10px;
     width: 100%;
+    height: 135px;
     object-fit: cover;
-    border-radius: 10px;
+  
+    .falafel {
+      grid-column: 1 / span 1;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .lambchop-container {
     padding: 6.5px 10px 10px 6.5px;
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+  
+    .lambchop {
+      grid-column: 2 / span 1;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
   }
 }
 
