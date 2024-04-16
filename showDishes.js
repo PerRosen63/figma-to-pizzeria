@@ -1,6 +1,5 @@
 import menu from "./menuData.js";
 
-
 const mobileDishes = ["Kebabpizza", "Sourcream & Onion Burger"];
 const tabletDishes = [
   "Kebabpizza",
@@ -19,90 +18,82 @@ const desktopDishes = [
   "Grillspett - Vegetarisk",
 ];
 
-
 function createMenuButton() {
-    let menuButton = document.createElement('button');
-    menuButton.classList.add('menu-button');
-    let menuButtonText = document.createElement('h4');
-    menuButtonText.textContent = 'Meny';
-    menuButton.appendChild(menuButtonText);
-    return menuButton;
+  let menuButton = document.createElement("button");
+  menuButton.classList.add("menu-button");
+  let menuButtonText = document.createElement("h4");
+  menuButtonText.textContent = "Meny";
+  menuButton.appendChild(menuButtonText);
+  return menuButton;
 }
-function createDailyContent () {
-    let dailyDiv = document.getElementById('daily');
-    let dailyText1 = document.createElement('h4');
-    dailyText1.textContent = 'Dagens lunch 99:-';
-    let dailyText2 = document.createElement('p');
-    dailyText2.textContent = 'må-fr 11-16';
-    dailyDiv.appendChild(dailyText1);
-    dailyDiv.appendChild(dailyText2);
+function createDailyContent() {
+  let dailyDiv = document.getElementById("daily");
+  let dailyText1 = document.createElement("h4");
+  dailyText1.textContent = "Dagens lunch 99:-";
+  let dailyText2 = document.createElement("p");
+  dailyText2.textContent = "må-fr 11-16";
+  dailyDiv.appendChild(dailyText1);
+  dailyDiv.appendChild(dailyText2);
 }
 
-function createAllergiesDiv() { 
-    let allergiesDiv = document.getElementById("allergies");
-    let allergyText = document.createElement('h3');
-    allergyText.textContent = 'Allergier? Fråga oss:';
-    allergiesDiv.appendChild(allergyText);
-  
-    let contactButton = document.createElement('button');
-    contactButton.classList.add('contact-button');
+function createAllergiesDiv() {
+  let allergiesDiv = document.getElementById("allergies");
+  let allergyText = document.createElement("h3");
+  allergyText.textContent = "Allergier? Fråga oss:";
+  allergiesDiv.appendChild(allergyText);
 
-    let contactButtonText = document.createElement('h3');
-    contactButtonText.textContent = 'Kontakt';
-    contactButton.appendChild(contactButtonText);
-    allergiesDiv.appendChild(contactButton);
-  }
+  let contactButton = document.createElement("button");
+  contactButton.classList.add("contact-button");
 
-  
+  let contactButtonText = document.createElement("h3");
+  contactButtonText.textContent = "Kontakt";
+  contactButton.appendChild(contactButtonText);
+  allergiesDiv.appendChild(contactButton);
+}
+
 function addFreshContent() {
-    let freshDiv = document.getElementById('fresh');
-    let freshText = document.createElement('h2');
-    freshText.textContent = 'Alltid färska råvaror!';
-    freshDiv.appendChild(freshText);
+  let freshDiv = document.getElementById("fresh");
+  let freshText = document.createElement("h2");
+  freshText.textContent = "Alltid färska råvaror!";
+  freshDiv.appendChild(freshText);
 }
 
 function addAllDishesContent() {
-  
-    let allDishesDiv = document.getElementById('allDishes');
-    console.log(allDishesDiv);
-    let allDishesText = document.createElement('h4');
-    allDishesText.textContent = 'Alla våra rätter:';
-    console.log(allDishesText);
-    allDishesDiv.appendChild(allDishesText);
-    
-    let menuButton = createMenuButton();
-    allDishesDiv.appendChild(menuButton);
-    
+  let allDishesDiv = document.getElementById("allDishes");
+  let allDishesText = document.createElement("h4");
+  allDishesText.textContent = "Alla våra rätter:";
+  allDishesDiv.appendChild(allDishesText);
+
+  let menuButton = createMenuButton();
+  allDishesDiv.appendChild(menuButton);
 }
 
 function createDishContainer(menuItem) {
+  let dishContainer = document.createElement("div");
+  dishContainer.classList.add("dish");
+  let dishTitle = document.createElement("h3");
+  dishTitle.textContent = menuItem.name;
+  let dishDescription = document.createElement("p");
+  dishDescription.textContent = menuItem.description;
 
-   
+  dishContainer.appendChild(dishTitle);
+  dishContainer.appendChild(dishDescription);
 
-    let dishContainer = document.createElement('div');
-    dishContainer.classList.add('dish');
-    let dishTitle = document.createElement('h3');
-    dishTitle.textContent = menuItem.name;
-    let dishDescription = document.createElement('p');
-    dishDescription.textContent = menuItem.description;
-
-    dishContainer.appendChild(dishTitle);
-    dishContainer.appendChild(dishDescription);
-    
-    return dishContainer;
+  return dishContainer;
 }
-
 
 export function showDishes() {
   let recommendedDishesDiv = document.getElementById("recommendedDishes");
-  let heading = document.createElement('h2');
-  heading.textContent = 'Våra kunder rekommenderar';
+  let heading = document.createElement("h2");
+  heading.textContent = "Våra kunder rekommenderar";
   recommendedDishesDiv.appendChild(heading);
 
-
   function appendDishes(dishes) {
+    console.log('Antal rätter att lägga till:', dishes.length);
     dishes.forEach(function (dishName) {
-      let dish = menu.flatMap(category => category.items).find((item) => item.name === dishName);
+      let dish = menu
+        .flatMap((category) => category.items)
+        .find((item) => item.name === dishName);
       if (dish) {
         let dishContainer = createDishContainer(dish);
         recommendedDishesDiv.appendChild(dishContainer);
@@ -120,52 +111,41 @@ export function showDishes() {
   } else {
     appendDishes(desktopDishes);
   }
-  
 }
 
 function showContentByPlatform() {
   let windowWidth = window.innerWidth;
-    
-    if (window.innerWidth < 768) {
-      createDailyContent();
-      showDishes();
-      createAllergiesDiv();
-      let menuButton = createMenuButton();
-      document.getElementById('allDishes').appendChild(menuButton);
-      document.getElementById('allDishes').style.display = 'none';
-    } else if (windowWidth >=768 && windowWidth < 1024) {
-      showDishes();
-      createDailyContent();
-      createAllergiesDiv();
-      addFreshContent();
-      addAllDishesContent();
-      document.getElementById('allDishes').style.display = 'block';
-    } else {
-      showDishes();
-      createDailyContent();
-      createAllergiesDiv();
-      addFreshContent();
-      addAllDishesContent();
-      document.getElementById('allDishes').style.display = 'block';
-    }
 
-    }
+  if (window.innerWidth < 768) {
+    createDailyContent();
+    showDishes();
+    createAllergiesDiv();
+    let menuButton = createMenuButton();
+    document.getElementById("allDishes").appendChild(menuButton);
+    document.getElementById("allDishes").style.display = "none";
+  } else if (windowWidth >= 768 && windowWidth < 1024) {
+    showDishes();
+    createDailyContent();
+    createAllergiesDiv();
+    addFreshContent();
+    addAllDishesContent();
+    document.getElementById("allDishes").style.display = "block";
+  } else {
+    showDishes();
+    createDailyContent();
+    createAllergiesDiv();
+    addFreshContent();
+    addAllDishesContent();
+    document.getElementById("allDishes").style.display = "block";
+  }
+}
 
-document.addEventListener('DOMContentLoaded', () => {
+
+document.addEventListener("DOMContentLoaded", () => {
     showContentByPlatform();
 });
-
-window.addEventListener('resize', () => {
-    showContentByPlatform();
+/*
+window.addEventListener("resize", () => {
+  showContentByPlatform();
 });
-
-
-
-
-
-
-
-
-
-
-
+*/

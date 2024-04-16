@@ -22,6 +22,53 @@ Section One
 /* 
 Section Two
 */
+// all positioning is just for test - sizes, grid, margin and padding must be adjusted properly
+#recommendedDishes {
+  grid-column: 1 / span 8; 
+  padding: 30px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+#daily {
+  grid-column: 9 / span 4; /* Börjar från kolumn 9 och tar upp 4 kolumner */
+  padding: 20px;
+  width: 90%;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $whiteSecondary;
+}
+
+#allergies {
+  grid-column: 9 / span 4; /* Börjar från kolumn 9 och tar upp 4 kolumner */
+  padding: 20px;
+  width: 90%;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $whiteSecondary;
+}
+
+#fresh {
+  grid-column: 9 / span 4; /* Börjar från kolumn 9 och tar upp 4 kolumner */
+  padding: 20px;
+  width: 90%;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $whiteSecondary;
+}
+
+#allDishes {
+  grid-column: 9 / span 4; /* Börjar från kolumn 9 och tar upp 4 kolumner */
+  padding: 20px;
+  width: 90%;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $whiteSecondary;
+}
 // Anna
 
 /* 
