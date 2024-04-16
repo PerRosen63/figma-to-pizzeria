@@ -41,20 +41,18 @@ export function showDishes() {
   // Append differend number of dishes based on platform
   if (window.innerWidth < 768) {
     appendDishes(mobileDishes);
+    let menuButton = document.createElement('button');
+  menuButton.classList.add('menu-button');
+  let menuButtonText = document.createElement('h4');
+  menuButtonText.textContent = 'Meny';
+  menuButton.appendChild(menuButtonText);
+  recommendedDishesDiv.appendChild(menuButton)
   } else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
     appendDishes(tabletDishes);
   } else {
     appendDishes(desktopDishes);
   }
-
-  let menuButton = document.createElement('button');
-    menuButton.classList.add('menu-button');
-
-    let menuButtonText = document.createElement('h4');
-    menuButtonText.textContent = 'Meny';
-    menuButton.appendChild(menuButtonText);
-
-    recommendedDishesDiv.appendChild(menuButton)
+  
 }
 
 function createDishContainer(menuItem) {
