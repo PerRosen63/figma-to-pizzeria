@@ -98,102 +98,102 @@ Section One
       border: none;
     }
   }
-}
 
-.tiled-imgs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: $yellowPrimary;
-  border-radius: 10px 10px 0 0;
 
-  .pizza-container {
-    padding: 10px 6.5px 6.5px 10px;
-    width: 100%;
-    height: 135px;
-    object-fit: cover;
+  .tiled-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $yellowPrimary;
+    border-radius: 10px 10px 0 0;
+
+    .pizza-container {
+      padding: 10px 6.5px 6.5px 10px;
+      width: 100%;
+      height: 135px;
+      object-fit: cover;
+      
+
+      .pizza {
+        grid-column: 1 / span 1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+    .souvlaki-container {
+      padding: 10px 10px 6.5px 6.5px;
+      width: 100%;
+      height: 135px;
+      object-fit: cover;
+      
+
+      .souvlaki {
+        grid-column: 2 / span 1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+    .hamburger-container {
+      padding: 6.5px 6.5px 6.5px 10px;
+      width: 100%;
+      height: 135px;
+      object-fit: cover;
     
-
-    .pizza {
-      grid-column: 1 / span 1;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
+      .hamburger {
+        grid-column: 1 / span 1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
-  }
-  .souvlaki-container {
-    padding: 10px 10px 6.5px 6.5px;
-    width: 100%;
-    height: 135px;
-    object-fit: cover;
+    .kebab-container {
+      padding: 6.5px 10px 6.5px 6.5px;
+      width: 100%;
+      height: 135px;
+      object-fit: cover;
     
-
-    .souvlaki {
-      grid-column: 2 / span 1;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
+      .kebab {
+        grid-column: 2 / span 1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
-  }
-  .hamburger-container {
-    padding: 6.5px 6.5px 6.5px 10px;
-    width: 100%;
-    height: 135px;
-    object-fit: cover;
-  
-    .hamburger {
-      grid-column: 1 / span 1;
-      object-fit: cover;
+    .falafel-container {
+      padding: 6.5px 6.5px 10px 10px;
       width: 100%;
-      height: 100%;
-      border-radius: 10px;
+      height: 135px;
+      object-fit: cover;
+    
+      .falafel {
+        grid-column: 1 / span 1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
-  }
-  .kebab-container {
-    padding: 6.5px 10px 6.5px 6.5px;
-    width: 100%;
-    height: 135px;
-    object-fit: cover;
-  
-    .kebab {
-      grid-column: 2 / span 1;
-      object-fit: cover;
+    .lambchop-container {
+      padding: 6.5px 10px 10px 6.5px;
       width: 100%;
-      height: 100%;
-      border-radius: 10px;
-    }
-  }
-  .falafel-container {
-    padding: 6.5px 6.5px 10px 10px;
-    width: 100%;
-    height: 135px;
-    object-fit: cover;
-  
-    .falafel {
-      grid-column: 1 / span 1;
+      height: 135px;
       object-fit: cover;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-    }
-  }
-  .lambchop-container {
-    padding: 6.5px 10px 10px 6.5px;
-    width: 100%;
-    height: 135px;
-    object-fit: cover;
-  
-    .lambchop {
-      grid-column: 2 / span 1;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
+    
+      .lambchop {
+        grid-column: 2 / span 1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
   }
 }
-
 /* 
 Section Two
 */
