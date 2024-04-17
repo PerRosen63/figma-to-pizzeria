@@ -552,6 +552,7 @@ Section Food Menu
   h2 {
     color: $bluePrimary;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   h3 {
@@ -560,6 +561,17 @@ Section Food Menu
 
   p {
     color: $blackSecondary;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .menu-item {
+      width: 48%;
+      margin-bottom: 20px;
+    }
   }
 
 }
