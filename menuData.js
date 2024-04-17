@@ -19,7 +19,7 @@ const menu = [
         { name: 'Grillspett - Fläsk', description: 'Fläskarré, tomat, paprika, lök, tzatziki' },
         { name: 'Grillspett - Kyckling', description: 'Kycklingfilé, tomat, paprika, lök, tzatziki' },
         { name: 'Grillspett - Lamm', description: 'Lammfilé, tomat, paprika, lök, tzatziki' },
-        { name: 'Grillspett - Vegetarisk', description: 'tomat, paprika, lök, majs, champinjoner, tztziki'}
+        { name: 'Grillspett - Vegetarisk', description: 'tomat, paprika, lök, majs, champinjoner, tzatziki'}
         ]
     },
     {

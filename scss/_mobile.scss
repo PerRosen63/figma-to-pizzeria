@@ -162,13 +162,15 @@ Cookie
 */
 #cookieContainer {
   position: fixed;
-  bottom: 100px;
+  bottom: 0px;
+  /*
   left: 10px;
   right: 10px;
-  width: 95vw;
+  */
+  width: 100vw;
   background-color: $whiteSecondary;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   z-index: 1000;
   padding: 10px;
 }
