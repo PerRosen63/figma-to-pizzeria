@@ -1,13 +1,77 @@
+/*
+Variables and mixins
+*/
+
+$boxShadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+//Hide, but not for  screen readers
+@mixin hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px);
+  /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(50%);
+  /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap;
+  /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+/***************** 
+Shared css
+******************/
+
+// Hide span ""alt" text
+.logotype {
+  span {
+    @include hidden;
+  }
+  // Svg display
+  svg {
+    display: block;
+  }
+}
+
+// Link style
+
+a {
+  text-decoration: none;
+}
+
+// Font family
+
 h1,
 h2,
-h3 {
-  font-family: "Courgette", cursive;
-}
+h3,
 h4,
 h5,
 h6,
-p {
+li {
+  font-family: "Courgette", cursive;
+}
+
+p,
+button,
+input {
   font-family: "Merienda", cursive;
+}
+
+h1,
+h2,
+h3,
+li,
+a {
+  color: $bluePrimary;
+}
+
+p {
+  color: $blackSecondary;
 }
 
 //smooth scroll
@@ -22,7 +86,7 @@ body {
 main,
 header,
 footer {
-  display: grid;
+  display: flex;
   padding: 5px 10px;
 }
 
@@ -33,9 +97,11 @@ footer {
 
 main {
   background-color: $bluePrimary;
+  flex-direction: column;
 }
 
 section {
+  //height: calc(100vh - 12px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
@@ -46,7 +112,59 @@ section {
 /* 
 Header
 */
-// Per
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  .logotype svg:active g path,
+  .logotype svg:active g#georgiosText path:nth-child(-n + 3),
+  .logotype svg:active g#pizzeriaText path:first-child,
+  .logotype svg:active g#sedanLogoGroup path:first-child,
+  .logotype svg:active g#year1992LogoGroup path:first-child {
+    fill: $whiteSecondary;
+  }
+  .logotype svg:active g path:first-child {
+    fill: $greenPrimary;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+  .phone-icon {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+    background: transparent;
+    svg {
+      width: 50px;
+      height: 50px;
+      border: 3px solid $bluePrimary;
+      border-radius: 50%;
+      padding: 2px 2px 0 0;
+    }
+  }
+  .phone-icon:active svg {
+    border-color: $greenPrimary;
+    background-color: $greenPrimary !important;
+  }
+  .phone-icon:active svg path {
+    fill: $whiteSecondary;
+  }
+}
 
 /* 
 Section One
@@ -142,9 +260,135 @@ Section Two
 
 // Anna
 
+/*
+Section form
+*/
+
+.section-form {
+  background-color: $greenPrimary;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .address-field,
+    .submit-btn {
+      margin-bottom: 10px;
+      padding: 0 10px;
+      height: 40px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+    .address-field {
+      width: 100%;
+    }
+    .submit-btn {
+      color: $whiteSecondary;
+      background-color: $bluePrimary;
+      border: none;
+      box-shadow: $boxShadow;
+      &:hover {
+        background-color: $blueHover;
+      }
+      &:disabled {
+        color: lightgrey;
+        background-color: $blueInactive;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
 /* 
 Section Three
 */
+
+.section-three {
+  p,
+  h3 {
+    color: $whiteSecondary;
+  }
+}
+.section-three {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  margin-top: -20px;
+  .contact-box {
+    background-color: $greenPrimary;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quote-box {
+    margin-top: 10px;
+    background-color: $greenPrimary;
+    border-radius: 10px;
+    .quote-box-bg-img {
+      background: url(assets/ChickenTaco_1400.jpg) no-repeat right top;
+      background-size: cover;
+      margin: 0 -10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-left: 20px;
+      padding-top: 50px;
+      .quote {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        align-items: flex-end;
+        .quote-bubble {
+          padding: 10px;
+          background-color: rgba(0, 0, 0, 0.7);
+          border-radius: 10px 10px 0 0;
+          p {
+            color: $whiteSecondary;
+          }
+          .rating {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            flex-wrap: wrap;
+            p {
+              line-height: 0.8;
+            }
+          }
+        }
+        .quote-shape {
+          width: 0;
+          height: 0;
+          border-bottom: 20px solid rgba(0, 0, 0, 0.7);
+          border-right: 20px solid transparent;
+        }
+      }
+
+      .logotype {
+        background-color: $greenPrimary;
+        padding: 10px;
+        margin-left: 20px;
+        border-top-left-radius: 25px;
+        svg {
+          g path,
+          g#georgiosText path:nth-child(-n + 3),
+          g#pizzeriaText path:first-child,
+          g#sedanLogoGroup path:first-child,
+          g#year1992LogoGroup path:first-child {
+            fill: $whiteSecondary;
+          }
+          g path:first-child {
+            fill: $greenPrimary;
+          }
+        }
+      }
+    }
+  }
+}
 // Per
 
 /* 
@@ -155,6 +399,15 @@ Section Food Menu
 /* 
 Section Footer
 */
+footer {
+  border-bottom: 1px solid black;
+  p {
+    color: $bluePrimary;
+  }
+  span {
+    text-transform: uppercase;
+  }
+}
 // Per
 
 /* 
@@ -185,7 +438,7 @@ Cookie
     margin-bottom: 40px;
     position: relative;
     z-index: 1;
-}
+  }
   button {
     margin-left: auto;
     margin-right: 10px;
@@ -194,7 +447,7 @@ Cookie
     border: none;
     border-radius: 12px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-}
+  }
   #rejectButton {
     background-color: $redSecondary;
     color: $whiteSecondary;
@@ -220,5 +473,26 @@ Cookie
     &:hover {
       background-color: $greenHover;
     }
+  }
+}
+// Anna
+
+/**
+Max width 767px
+*/
+
+@media screen and (max-width: 767px) {
+  // Sticky header top padding
+  html {
+    scroll-padding-top: 100px;
+  }
+  // Logo size
+  .logotype svg {
+    width: 80px;
+    height: 80px;
+  }
+  // Hidden in mobile
+  .hidden {
+    @include hidden;
   }
 }
