@@ -1,3 +1,9 @@
+/*
+Variables and mixins
+*/
+
+$boxShadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
 //Hide, but not for  screen readers
 @mixin hidden {
   border: 0;
@@ -50,7 +56,9 @@ li {
   font-family: "Courgette", cursive;
 }
 
-p {
+p,
+button,
+input {
   font-family: "Merienda", cursive;
 }
 
@@ -168,9 +176,51 @@ Section Two
 */
 // Anna
 
+/*
+Section form
+*/
+
+.section-form {
+  background-color: $greenPrimary;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .address-field,
+    .submit-btn {
+      margin-bottom: 10px;
+      padding: 0 10px;
+      height: 40px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+    .address-field {
+      width: 100%;
+    }
+    .submit-btn {
+      color: $whiteSecondary;
+      background-color: $bluePrimary;
+      border: none;
+      box-shadow: $boxShadow;
+      &:hover {
+        background-color: $blueHover;
+      }
+      &:disabled {
+        color: lightgrey;
+        background-color: $blueInactive;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
 /* 
 Section Three
 */
+
 .section-three {
   p,
   h3 {
@@ -181,6 +231,7 @@ Section Three
   display: flex;
   flex-direction: column;
   background-color: transparent;
+  margin-top: -20px;
   .contact-box {
     background-color: $greenPrimary;
     border-radius: 10px;
