@@ -537,7 +537,33 @@ Section Three
 /* 
 Section Food Menu
 */
-// ?
+#menu {
+  width: 100%;
+  background-color: $whiteSecondary;
+  padding: 20px;
+  box-sizing: border-box;
+
+  h1 {
+    color: $bluePrimary;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: $bluePrimary;
+    margin-top: 20px;
+  }
+
+  h3 {
+    color: $blackSecondary;
+  }
+
+  p {
+    color: $blackSecondary;
+  }
+
+}
+// Anna
 
 /* 
 Section Footer

@@ -12,8 +12,12 @@ export function renderMenu() {
         categoryHeading.textContent = category.category;
         menuSection.appendChild(categoryHeading);
 
+        const categoryContainer = document.createElement('div');
+        categoryContainer.classList.add('menu-container');
+
         category.items.forEach(item => {
             const menuItem = document.createElement('div');
+            menuItem.classList.add('menu-item');
 
             const itemName = document.createElement('h3');
             itemName.textContent = item.name;
@@ -23,9 +27,10 @@ export function renderMenu() {
             itemDescription.textContent = item.description;
             menuItem.appendChild(itemDescription);
 
-            menuSection.appendChild(menuItem);
+            categoryContainer.appendChild(menuItem);
            
            
         });
+        menuSection.appendChild(categoryContainer);
     });
 }
