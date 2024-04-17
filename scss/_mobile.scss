@@ -6,7 +6,8 @@ h3 {
 h4,
 h5,
 h6,
-p {
+p, 
+button {
   font-family: "Merienda", cursive;
 }
 
@@ -56,45 +57,64 @@ Section One
 .title-section {
   background-image: url("/assets/grilled.jpg");
   background-size: cover;
+  border-bottom: 10px solid $bluePrimary;
   margin-left: -10px;
+  margin-top: -10px;
   margin-right: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .title-card {
     background-color: #474747;
     opacity: 80%;
-    color: #FFFFFF;
-    border-radius: 21px;
-    font-size: 1.5rem;
+    color: $whiteSecondary;
     text-align: center;
-    margin: auto;
-    width: 75%;
+    border-radius: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 6px;
+    margin-top: 25%;
+    margin-bottom: 5%;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 1.3;
+    }
     
     .meal-push {
       text-transform: uppercase;
       font-size: 0.75rem;
-      margin-left: 15px;
-      margin-right: 15px;
     }
   }
   .food-menu-btn {
-    background-color: #2175D8;
-    color: #FFFFFF;
+    background-color: $bluePrimary;
+    color: $whiteSecondary;
+    font-size: 1.5rem;
     border-radius: 12px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-bottom: 5px;'
+    margin-bottom: 5%;
+    width: 30%;
+    
   }
 }
 
-
+.section-one {
+  background-color: transparent;
+}
 .tiled-imgs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: $yellowPrimary;
+  border-radius: 10px 10px 0 0;
 
   .pizza-container {
     padding: 10px 6.5px 6.5px 10px;
     width: 100%;
     height: 135px;
     object-fit: cover;
+    
 
     .pizza {
       grid-column: 1 / span 1;
