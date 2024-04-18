@@ -162,17 +162,17 @@ Section Three
 Section Food Menu
 */
 .section-menu {
-  padding: 50px;
+  padding-left: 230px;
+  padding-right: 150px;
 
   .menu-section {
-    padding-left: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .logo-container {
-      margin: 0 auto; /* Centrera elementet horisontellt */
-      max-width: fit-content; /* Sätt maximal bredd till innehållets storlek */
+      margin: 0 auto; 
+      max-width: fit-content; 
       display: flex;
       justify-content: center;
       margin-top: 35px;
@@ -181,8 +181,8 @@ Section Food Menu
       img {
         display: block;
         margin: 0 auto;
-        width: 212px; /* Behåll bredden på logotypen */
-        height: 212px; /* Behåll höjden på logotypen */
+        width: 212px; 
+        height: 212px; 
       }
     }
 
@@ -190,8 +190,8 @@ Section Food Menu
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding-left: 40px; /* Justera utrymmet från vänster */
-      padding-right: 20px; /* Justera utrymmet från höger */
+      padding-left: 40px; 
+      padding-right: 20px; 
 
       .menu-item {
         width: calc(50% - 15px);
@@ -204,14 +204,15 @@ Section Food Menu
     position: sticky;
     top: 200px;
     left: 0;
-    margin-left: -50px;
+    margin-left: -230px;
+    margin-right: 20px;
     z-index: 1;
-    display: inline-flex;
+    display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
     padding: 10px 20px;
-    max-width: 220px; /* Behåll den maximala bredden på sticky menu */
+    max-width: 220px; 
   }
 
   .menu-header ul {
@@ -226,6 +227,7 @@ Section Food Menu
 
   .menu-header li {
     font-size: 2rem;
+    line-height: 4rem;
   }
 }
 // ?
