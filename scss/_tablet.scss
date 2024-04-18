@@ -60,7 +60,73 @@ header {
 Section One
 */
 // Jessika
+.section-one {
+  .title-section-container {
+    background-color: $yellowPrimary;
+    padding: 25px 25px 0 25px;
+    border-radius: 10px 10px 0 0;
+  
+    .title-section {
+      border-bottom: 0;
+      margin-left: 0;
+      margin-top: 0;
+      margin-right: 0;
+      border-radius: 10px;
 
+      .title-card {
+        padding-top: 10px;
+        padding-bottom: 28px;
+        margin-top: 3%;
+        border-radius: 10px;
+
+        .meal-push {
+          font-weight: 200;
+          font-size: 1.22rem;
+        }
+      }
+
+      .food-menu-btn {
+        margin-bottom: 25%;
+      }
+    }
+  }
+
+  .tiled-imgs {
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 0;
+
+    .pizza-container {
+      grid-column: 1 / span 2;
+      padding: 25px 12.5px 12.5px 25px;
+      height: 180px;
+    }
+    .souvlaki-container {
+      grid-column: 3 / span 2;
+      padding: 25px 25px 12.5px 12.5px;
+      height: 180px;
+    }
+    .hamburger-container {
+      grid-column: 1 / span 2;
+      padding: 12.5px 12.5px 12.5px 25px;
+      height: 180px;
+    }
+    .kebab-container {
+      grid-column: 3 / span 2;
+      padding: 12.5px 25px 12.5px 12.5px;
+      height: 180px;
+    }
+    .falafel-container {
+      grid-column: 1 / span 2;
+      padding: 12.5px 12.5px 25px 25px;
+      height: 180px;
+    }
+    .lambchop-container {
+      grid-column: 3 / span 2;
+      padding: 12.5px 25px 25px 12.5px;
+      height: 180px;
+    }
+  }
+}
 /* 
 Section Two
 */
