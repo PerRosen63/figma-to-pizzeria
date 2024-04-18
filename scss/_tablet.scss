@@ -92,9 +92,6 @@ Section Two
     //width: 354px;
     //margin: 20px auto;
     margin: 12.5px;
-    h3 {
-      font
-    }
   }
 
   #daily,
@@ -104,15 +101,20 @@ Section Two
     grid-column: 4 / span 3;
     margin: 12.5px;
     padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   #daily {
-    grid-row: 0 / span 2;
+    grid-row: 1 / 2;
     /* padding: 20px;
     width: 354px;
     height: 89px;
     margin: 20px auto; */
-    display: flex;
+    //display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
@@ -130,21 +132,24 @@ Section Two
     text-align: center;
     border-radius: 10px;
     background-color: $whiteSecondary;
+    .contact-button {
+      margin-left: 0;
+    }
   }
 
   #fresh {
-    grid-row: 5 / auto;
+    grid-row: 5 / 9;
     /* padding: 20px;
     width: 90%;
     margin: 5px; */
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     background-color: $whiteSecondary;
     color: $bluePrimary;
   }
 
   #allDishes {
-    grid-row: 8 / span 2;
+    grid-row: 9 / 11;
     /* padding: 5px;
     width: 90%;
     margin: 20px auto; */
@@ -161,7 +166,7 @@ Section Two
       border: none;
       border-radius: 10px;
       margin-top: 10px;
-      margin-left: auto;
+      margin-left: 0;
       margin-right: auto;
       display: block;
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
