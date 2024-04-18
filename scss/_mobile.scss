@@ -668,12 +668,12 @@ Cookie
 }
 #cookie {
   background-color: $bluePrimary;
-  color: $whiteSecondary;
   padding: 20px;
   border-radius: 10px;
   position: relative;
 
   p {
+    color: $whiteSecondary;
     margin-bottom: 40px;
     position: relative;
     z-index: 1;
