@@ -535,7 +535,6 @@ Section Food Menu
 */
 .section-menu {
   background-color: $whiteSecondary;
-  padding: 20px;
   border-radius: 0;
   margin: -5px -10px;
   box-sizing: border-box;
@@ -549,33 +548,93 @@ Section Food Menu
     left: 0;
     right: 0;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 
-    ul {
-      list-style-type: none;
-      padding: 5px;
-      margin: 0;
-      display: flex; /* För att placera listan horisontellt */
-    }
+  h1 {
+    color: $bluePrimary;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    li {
-      display: inline;
-      margin-right: 10px;
-      color: $whiteSecondary;
-      font-size: 0.8125rem;
-    }
+  h2 {
+    color: $bluePrimary;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+  }
 
-    li:last-child {
-      margin-right: 0;
-    }
+  h3 {
+    color: $blackSecondary;
+  }
+
+  p {
+    color: $blackSecondary;
   }
 
   .menu-section {
-    display: flex; /* Lägg till flex för att hantera hela sektionens layout */
-    flex-direction: column; /* Visa sektionens innehåll som en kolumn */
-    align-items: center; /* Centrera sektionens innehåll horisontellt */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* Behåll din befintliga .logo-container och .menu-container stilar här */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 128px;
+      height: 128px;
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 20px;
+
+    .menu-item {
+      width: calc(50% - 15px);
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.section-menu .menu-header {
+  ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    width: 100vw;
+  }
+
+  li {
+    display: inline;
+    margin-right: 15px;
+    color: $whiteSecondary;
+    font-size: 0.8125rem;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
 }
 
 // Anna
@@ -600,10 +659,6 @@ Cookie
 #cookieContainer {
   position: fixed;
   bottom: 0px;
-  /*
-  left: 10px;
-  right: 10px;
-  */
   width: 100vw;
   background-color: $whiteSecondary;
   padding: 10px;
