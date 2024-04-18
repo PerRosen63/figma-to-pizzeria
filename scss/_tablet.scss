@@ -92,29 +92,36 @@ Section One
   }
 
   .tiled-imgs {
+    grid-template-columns: repeat(4, 1fr);
     border-radius: 0;
 
     .pizza-container {
+      grid-column: 1 / span 2;
       padding: 25px 12.5px 12.5px 25px;
       height: 180px;
     }
     .souvlaki-container {
+      grid-column: 3 / span 2;
       padding: 25px 25px 12.5px 12.5px;
       height: 180px;
     }
     .hamburger-container {
+      grid-column: 1 / span 2;
       padding: 12.5px 12.5px 12.5px 25px;
       height: 180px;
     }
     .kebab-container {
+      grid-column: 3 / span 2;
       padding: 12.5px 25px 12.5px 12.5px;
       height: 180px;
     }
     .falafel-container {
+      grid-column: 1 / span 2;
       padding: 12.5px 12.5px 25px 25px;
       height: 180px;
     }
     .lambchop-container {
+      grid-column: 3 / span 2;
       padding: 12.5px 25px 25px 12.5px;
       height: 180px;
     }
