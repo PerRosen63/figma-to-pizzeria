@@ -120,9 +120,6 @@ function showContentByPlatform() {
     createDailyContent();
     showDishes();
     createAllergiesDiv();
-    let menuButton = createMenuButton();
-    document.getElementById("allDishes").appendChild(menuButton);
-    document.getElementById("allDishes").style.display = "none";
   } else if (windowWidth >= 768 && windowWidth < 1024) {
     showDishes();
     createDailyContent();
