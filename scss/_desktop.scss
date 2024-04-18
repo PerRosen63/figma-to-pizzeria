@@ -4,10 +4,11 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+/*
 section {
   grid-template-columns: repeat(12, 1fr);
 }
+*/
 
 /* 
 Header
@@ -38,7 +39,42 @@ Header
 Section One
 */
 // Jessika
+.section-one {
+.tiled-imgs {
+    grid-template-columns: repeat(12, 1fr);
 
+    .pizza-container {
+      grid-column: 1 / span 2;
+      padding: 25px 12.5px 25px 25px;
+      height: 190px;
+    }
+    .souvlaki-container {
+      grid-column: 3 / span 2;
+      padding: 25px 12.5px 25px 12.5px;
+      height: 190px;
+    }
+    .hamburger-container {
+      grid-column: 5 / span 2;
+      padding: 25px 12.5px 25px 12.5px;
+      height: 190px;
+    }
+    .kebab-container {
+      grid-column: 7 / span 2;
+      padding: 25px 12.5px 25px 12.5px;
+      height: 190px;
+    }
+    .falafel-container {
+      grid-column: 9 / span 2;
+      padding: 25px 12.5px 25px 12.5px;
+      height: 190px;
+    }
+    .lambchop-container {
+      grid-column: 11 / span 2;
+      padding: 25px 25px 25px 12.5px;
+      height: 190px;
+    }
+  }
+}
 /* 
 Section Two
 */
