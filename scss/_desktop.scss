@@ -40,7 +40,24 @@ Section One
 */
 // Jessika
 .section-one {
-.tiled-imgs {
+  .title-card {
+    
+    border-radius: 21px;
+    width: 65%;
+
+    h1 {
+      line-height: 1;
+    }
+
+    .meal-push {
+      padding-top: 15px;
+    }
+  }
+  .food-menu-btn {
+    margin-bottom: 20%;
+  }
+      
+  .tiled-imgs {
     grid-template-columns: repeat(12, 1fr);
 
     .pizza-container {
