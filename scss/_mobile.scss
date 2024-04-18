@@ -538,7 +538,6 @@ Section Three
 Section Food Menu
 */
 .section-menu {
-  width: 100vw;
   background-color: $whiteSecondary;
   padding: 20px;
   border-radius: 0;
@@ -571,7 +570,7 @@ Section Food Menu
     justify-content: space-between;
 
     .menu-item {
-      width: calc(50% - 10px);
+      width: calc(50% - 15px);
       margin-bottom: 20px;
 
     }
