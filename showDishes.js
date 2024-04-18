@@ -21,7 +21,7 @@ const desktopDishes = [
 function createMenuButton() {
   let menuButton = document.createElement("button");
   menuButton.classList.add("menu-button");
-  let menuButtonText = document.createElement("h4");
+  let menuButtonText = document.createElement("p");
   menuButtonText.textContent = "Meny";
   menuButton.appendChild(menuButtonText);
   return menuButton;
@@ -45,7 +45,7 @@ function createAllergiesDiv() {
   let contactButton = document.createElement("button");
   contactButton.classList.add("contact-button");
 
-  let contactButtonText = document.createElement("h3");
+  let contactButtonText = document.createElement("p");
   contactButtonText.textContent = "Kontakt";
   contactButton.appendChild(contactButtonText);
   allergiesDiv.appendChild(contactButton);
@@ -126,14 +126,14 @@ function showContentByPlatform() {
     createAllergiesDiv();
     addFreshContent();
     addAllDishesContent();
-    document.getElementById("allDishes").style.display = "block";
+    //document.getElementById("allDishes").style.display = "block";
   } else {
     showDishes();
     createDailyContent();
     createAllergiesDiv();
     addFreshContent();
     addAllDishesContent();
-    document.getElementById("allDishes").style.display = "block";
+    //document.getElementById("allDishes").style.display = "block";
   }
 }
 
