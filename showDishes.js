@@ -71,7 +71,7 @@ function addAllDishesContent() {
 function createDishContainer(menuItem) {
   let dishContainer = document.createElement("div");
   dishContainer.classList.add("dish");
-  let dishTitle = document.createElement("h3");
+  let dishTitle = document.createElement("h4");
   dishTitle.textContent = menuItem.name;
   let dishDescription = document.createElement("p");
   dishDescription.textContent = menuItem.description;
