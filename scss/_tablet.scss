@@ -61,7 +61,23 @@ Section One
 */
 // Jessika
 .section-one {
+  .title-section-container {
+    background-color: $yellowPrimary;
+    padding: 25px 25px 0 25px;
+    border-radius: 10px 10px 0 0;
+  
+    .title-section {
+      border-bottom: 0;
+      margin-left: 0;
+      margin-top: 0;
+      margin-right: 0;
+      border-radius: 10px;
+    }
+  }
+
   .tiled-imgs {
+    border-radius: 0;
+
     .pizza-container {
       padding: 25px 12.5px 12.5px 25px;
       height: 180px;
