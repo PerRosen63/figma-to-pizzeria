@@ -2,6 +2,17 @@ import menu from './menuData.js';
 
 export function renderMenu() {
     const menuSection = document.getElementById('menu');
+
+    const logoContainer = document.createElement('div');
+    logoContainer.classList.add('logo-container');
+
+    const svgLogo = document.createElement('img');
+    svgLogo.setAttribute('src', './assets/logotype.svg');
+    svgLogo.setAttribute('alt', 'Georgios Pizzeria Logo');
+
+    logoContainer.appendChild(svgLogo);
+    menuSection.appendChild(logoContainer);
+
     const menuHeading = document.createElement('h1');
     menuHeading.textContent = 'Meny';
 
