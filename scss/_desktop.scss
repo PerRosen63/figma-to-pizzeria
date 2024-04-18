@@ -163,6 +163,70 @@ Section Food Menu
 */
 .section-menu {
   padding: 50px;
+
+  .menu-section {
+    padding-left: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo-container {
+      margin: 0 auto; /* Centrera elementet horisontellt */
+      max-width: fit-content; /* Sätt maximal bredd till innehållets storlek */
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      margin-bottom: 25px;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 212px; /* Behåll bredden på logotypen */
+        height: 212px; /* Behåll höjden på logotypen */
+      }
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 40px; /* Justera utrymmet från vänster */
+      padding-right: 20px; /* Justera utrymmet från höger */
+
+      .menu-item {
+        width: calc(50% - 15px);
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .menu-header {
+    position: sticky;
+    top: 200px;
+    left: 0;
+    margin-left: -50px;
+    z-index: 1;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    max-width: 220px; /* Behåll den maximala bredden på sticky menu */
+  }
+
+  .menu-header ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    width: auto;
+    flex-grow: initial;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .menu-header li {
+    font-size: 2rem;
+  }
 }
 // ?
 
