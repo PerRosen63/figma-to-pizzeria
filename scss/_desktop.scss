@@ -4,11 +4,11 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
 }
-/*
+
 section {
   grid-template-columns: repeat(12, 1fr);
 }
-*/
+
 
 /* 
 Header
@@ -41,20 +41,19 @@ Section One
 // Jessika
 .section-one {
   .title-card {
-    
-    border-radius: 21px;
-    width: 65%;
+    border-radius: 21px; // något är fel, inget händer
+    margin-bottom: 2%; // något är fel, inget händer
 
     h1 {
       line-height: 1;
     }
 
     .meal-push {
-      padding-top: 15px;
+      padding-top: 15px; 
     }
   }
   .food-menu-btn {
-    margin-bottom: 20%;
+    margin-bottom: 5%; // något är fel, inget händer
   }
       
   .tiled-imgs {
@@ -92,6 +91,7 @@ Section One
     }
   }
 }
+
 /* 
 Section Two
 */
