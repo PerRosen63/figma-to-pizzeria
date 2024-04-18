@@ -10,7 +10,7 @@ footer {
 section {
   //height: calc(100vh - 24px);
   margin: 12.5px 0;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 /* 
@@ -65,87 +65,114 @@ Section One
 Section Two
 */
 // all positioning is just for test - sizes, grid, margin and padding must be adjusted properly
-#recommendedDishes {
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 28;
-  padding: 30px;
-  width: 354px;
-  margin: 20px auto;
-}
+.section-two {
+  display: grid;
+  padding: 12.5px;
+  //grid-template-rows: repeat(12, minmax(0, 1fr));
+  grid-template-rows: minmax(100px, max-content);
+  //align-items: baseline;
 
-#recommendedDishes h2 {
-  width: 100%;
-}
-
-#daily {
-  grid-column: 4 / span 3; 
-  grid-row: 1 / span 4;
-  padding: 20px;
-  width: 354px;
-  height: 89px;
-  margin: 20px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  h4 {
-    margin-right: 20px;
+  /* .one {
+    order: 2;
+  } */
+  .two {
+    order: 1;
   }
-}
+  .one,
+  .three,
+  .four,
+  .five {
+    order: 2;
+  }
 
-#allergies {
-  grid-column: 4 / span 3; /* Lägg till styling för allergies */
-  grid-row: 5 / span 7;
-  padding: 20px;
-  width: 345px;
-  height: 135px;
-  margin: 5px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: $whiteSecondary;
-}
+  #recommendedDishes {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 10;
+    padding: 25px;
+    //width: 354px;
+    //margin: 20px auto;
+    margin: 12.5px;
+    h3 {
+      font
+    }
+  }
 
-#fresh {
-  grid-column: 4 / span 3; /* Lägg till styling för fresh */
-  grid-row: 12 / span 10;
-  padding: 20px;
-  width: 90%;
-  margin: 5px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: $whiteSecondary;
-  color: $bluePrimary;
-}
+  #daily,
+  #allergies,
+  #fresh,
+  #allDishes {
+    grid-column: 4 / span 3;
+    margin: 12.5px;
+    padding: 25px;
+  }
 
-#allDishes {
-  grid-column: 4 / span 3;
-  grid-row: 23 / span 7;
-  padding: 5px;
-  width: 90%;
-  margin: 20px auto;
-  text-align: center;
-  border-radius: 10px;
-  background-color: $whiteSecondary;
+  #daily {
+    grid-row: 0 / span 2;
+    /* padding: 20px;
+    width: 354px;
+    height: 89px;
+    margin: 20px auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  .menu-button {
-    background-color: $bluePrimary;
-    color: $whiteSecondary;
-    transition: background-color 0.3s;
-    width: 142px;
-    height: 40px;
-    border: none;
+    h4 {
+      margin-right: 20px;
+    }
+  }
+
+  #allergies {
+    grid-row: 2 / span 3;
+    /* padding: 20px;
+    width: 345px;
+    height: 135px;
+    margin: 5px; */
+    text-align: center;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  
-    &:hover {
-      background-color: $blueHover;
+    background-color: $whiteSecondary;
+  }
+
+  #fresh {
+    grid-row: 5 / auto;
+    /* padding: 20px;
+    width: 90%;
+    margin: 5px; */
+    text-align: center;
+    border-radius: 10px;
+    background-color: $whiteSecondary;
+    color: $bluePrimary;
+  }
+
+  #allDishes {
+    grid-row: 8 / span 2;
+    /* padding: 5px;
+    width: 90%;
+    margin: 20px auto; */
+    text-align: center;
+    border-radius: 10px;
+    background-color: $whiteSecondary;
+
+    .menu-button {
+      background-color: $bluePrimary;
+      color: $whiteSecondary;
+      transition: background-color 0.3s;
+      width: 142px;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+      &:hover {
+        background-color: $blueHover;
+      }
     }
   }
 }
+
 // Anna
 
 /*
@@ -227,7 +254,7 @@ Section Three
 Section Food Menu
 */
 .section-menu {
-  margin: -10px -20px; 
+  margin: -10px -20px;
 
   .menu-container {
     display: flex;
@@ -235,15 +262,14 @@ Section Food Menu
     gap: 20px;
     justify-content: space-evenly;
     align-items: stretch;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-bottom: 20px;
 
     .menu-item {
-      width: calc(50% - 20px); 
+      width: calc(50% - 20px);
       box-sizing: border-box;
-
+    }
   }
-}
 }
 // Anna
 

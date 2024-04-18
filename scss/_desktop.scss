@@ -44,10 +44,10 @@ Section Two
 */
 // all positioning is just for test - sizes, grid, margin and padding must be adjusted properly
 #recommendedDishes {
-  grid-column: 1 / span 8; 
+  grid-column: 1 / span 9;
   padding: 30px;
-  width: 90%;
-  margin: 20px auto;
+  //width: 90%;
+  //margin: 20px auto;
 }
 
 #daily {
