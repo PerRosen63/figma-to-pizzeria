@@ -537,10 +537,12 @@ Section Three
 /* 
 Section Food Menu
 */
-#menu {
-  width: 100%;
+.section-menu {
+  width: 100vw;
   background-color: $whiteSecondary;
   padding: 20px;
+  border-radius: 0;
+  margin: -5px -10px; 
   box-sizing: border-box;
 
   h1 {
@@ -569,8 +571,9 @@ Section Food Menu
     justify-content: space-between;
 
     .menu-item {
-      width: 48%;
+      width: calc(50% - 10px);
       margin-bottom: 20px;
+
     }
   }
 

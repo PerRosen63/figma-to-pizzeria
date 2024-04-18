@@ -226,7 +226,26 @@ Section Three
 /* 
 Section Food Menu
 */
-// ?
+.section-menu {
+  margin: -10px -20px; 
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+
+    .menu-item {
+      width: calc(50% - 20px); 
+      box-sizing: border-box;
+
+  }
+}
+}
+// Anna
 
 /* 
 Section Footer
