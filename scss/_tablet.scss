@@ -60,7 +60,34 @@ header {
 Section One
 */
 // Jessika
-
+.section-one {
+  .tiled-imgs {
+    .pizza-container {
+      padding: 25px 12.5px 12.5px 25px;
+      height: 180px;
+    }
+    .souvlaki-container {
+      padding: 25px 25px 12.5px 12.5px;
+      height: 180px;
+    }
+    .hamburger-container {
+      padding: 12.5px 12.5px 12.5px 25px;
+      height: 180px;
+    }
+    .kebab-container {
+      padding: 12.5px 25px 12.5px 12.5px;
+      height: 180px;
+    }
+    .falafel-container {
+      padding: 12.5px 12.5px 25px 25px;
+      height: 180px;
+    }
+    .lambchop-container {
+      padding: 12.5px 25px 25px 12.5px;
+      height: 180px;
+    }
+  }
+}
 /* 
 Section Two
 */
