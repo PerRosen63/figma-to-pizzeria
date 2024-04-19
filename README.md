@@ -24,22 +24,25 @@ We utilized GitHub Issues and Projects to organize our workflow. By defining tas
 
 ### Screenshots
 #### Mobile view
-![mobile view with cookie bar](/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg)
-**mobile view with cookie bar**
-![mobile view without cookie bar](/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg)
-**mobile view without cookie bar**
+<img src="/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg" alt="mobile view with cookie bar" width="300">
+<p><strong>mobile view with cookie bar</strong></p>
+
+<img src="/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg" alt="mobile view without cookie bar" width="300">
+<p><strong>mobile view without cookie bar</strong></p>
 
 #### Tablet view
-![tablet view with cookie bar](/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg)
-**tablet view with cookie bar**
-![tablet view without cookie bar](/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg)
-**tablet view without cookie bar**
+<img src="/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg" alt="tablet view with cookie bar" width="400">
+<p><strong>tablet view with cookie bar</strong></p>
+
+<img src="/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg" alt="tablet view without cookie bar" width="400">
+<p><strong>tablet view without cookie bar</strong></p>
 
 #### Desktop view
-![desktop view with cookie bar](relative/path/to/image.png)
-**desktop view with cookie bar**
-![desktop view without cookie bar](relative/path/to/image.png)
-**desktop view without cookie bar**
+<img src="relative/path/to/image.png" alt="desktop view with cookie bar" width="600">
+<p><strong>desktop view with cookie bar</strong></p>
+
+<img src="relative/path/to/image.png" alt="desktop view without cookie bar" width="600">
+<p><strong>desktop view without cookie bar</strong></p>
 
 ## Contributors
 
