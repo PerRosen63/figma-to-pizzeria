@@ -9,7 +9,6 @@ section {
   grid-template-columns: repeat(12, 1fr);
 }
 
-
 /* 
 Header
 */
@@ -49,13 +48,13 @@ Section One
     }
 
     .meal-push {
-      padding-top: 15px; 
+      padding-top: 15px;
     }
   }
   .food-menu-btn {
     margin-bottom: 5%; // något är fel, inget händer
   }
-      
+
   .tiled-imgs {
     grid-template-columns: repeat(12, 1fr);
 
@@ -210,7 +209,11 @@ Section Footer
 Cookie
 */
 
-.cookieContainer {
-  max-width: 100%;
+// max-width and centering fixed element
+
+@media screen and (min-width: 1440px) {
+  #cookieContainer {
+    left: calc(50% - 720px);
+  }
 }
 // Anna

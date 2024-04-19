@@ -140,6 +140,9 @@ header {
       padding: 0;
       li {
         margin: 0 10px;
+        a:hover {
+          color: $blueHover;
+        }
       }
     }
   }
@@ -433,6 +436,7 @@ Section form
       height: 40px;
       border-radius: 10px;
       font-size: 1.2rem;
+      border: none;
     }
     .address-field {
       width: 100%;
@@ -440,7 +444,6 @@ Section form
     .submit-btn {
       color: $whiteSecondary;
       background-color: $bluePrimary;
-      border: none;
       box-shadow: $boxShadow;
       &:hover {
         background-color: $blueHover;
@@ -674,7 +677,8 @@ Cookie
 #cookieContainer {
   position: fixed;
   bottom: 0px;
-  width: 100vw;
+  width: 100%;
+  max-width: 1440px;
   background-color: $whiteSecondary;
   padding: 10px;
   border-radius: 10px 10px 0 0;
