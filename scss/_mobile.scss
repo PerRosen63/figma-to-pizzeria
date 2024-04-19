@@ -429,6 +429,7 @@ Section form
       height: 40px;
       border-radius: 10px;
       font-size: 1.2rem;
+      border: none;
     }
     .address-field {
       width: 100%;
@@ -436,7 +437,6 @@ Section form
     .submit-btn {
       color: $whiteSecondary;
       background-color: $bluePrimary;
-      border: none;
       box-shadow: $boxShadow;
       &:hover {
         background-color: $blueHover;
