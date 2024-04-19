@@ -27,11 +27,11 @@ We utilized GitHub Issues and Projects to organize our workflow. By defining tas
 #### Mobile view
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 50%; padding: 5px;">
-    <img src="/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg" alt="mobile view with cookie bar" style="width: 500">
+    <img src="/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg" alt="mobile view with cookie bar" style="width: 400px">
     <p><strong>mobile view with cookie bar</strong></p>
   </div>
   <div style="flex: 50%; padding: 5px;">
-    <img src="/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg" alt="mobile view without cookie bar" style="width: 500">
+    <img src="/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg" alt="mobile view without cookie bar" style="width: 400px">
     <p><strong>mobile view without cookie bar</strong></p>
   </div>
 </div>
@@ -39,20 +39,20 @@ We utilized GitHub Issues and Projects to organize our workflow. By defining tas
 #### Tablet view
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 50%; padding: 5px;">
-    <img src="/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg" alt="tablet view with cookie bar" style="width: 500">
+    <img src="/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg" alt="tablet view with cookie bar" style="width: 400px">
     <p><strong>tablet view with cookie bar</strong></p>
   </div>
   <div style="flex: 50%; padding: 5px;">
-    <img src="/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg" alt="tablet view without cookie bar" style="width: 500">
+    <img src="/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg" alt="tablet view without cookie bar" style="width: 400px">
     <p><strong>tablet view without cookie bar</strong></p>
   </div>
 </div>
 
 #### Desktop view
-<img src="relative/path/to/image.png" alt="desktop view with cookie bar" width="600">
+<img src="relative/path/to/image.png" alt="desktop view with cookie bar" width="500px">
 <p><strong>desktop view with cookie bar</strong></p>
 
-<img src="relative/path/to/image.png" alt="desktop view without cookie bar" width="600">
+<img src="relative/path/to/image.png" alt="desktop view without cookie bar" width="500px">
 <p><strong>desktop view without cookie bar</strong></p>
 
 ## Contributors
