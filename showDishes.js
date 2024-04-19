@@ -38,7 +38,7 @@ function createDailyContent() {
 
 function createAllergiesDiv() {
   let allergiesDiv = document.getElementById("allergies");
-  let allergyText = document.createElement("h3");
+  let allergyText = document.createElement("h4");
   allergyText.textContent = "Allergier? Fråga oss:";
   allergiesDiv.appendChild(allergyText);
 
