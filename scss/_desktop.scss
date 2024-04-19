@@ -42,14 +42,11 @@ Section One
 /* 
 Section Two
 */
-// all positioning is just for test - sizes, grid, margin and padding must be adjusted properly
 
 .section-two {
   #recommendedDishes {
     grid-column: 1 / 9;
-    //padding: 30px;
-    //width: 90%;
-    //margin: 20px auto;
+    column-count: 2;
   }
 
   #daily,
@@ -84,7 +81,6 @@ Section Food Menu
 .section-menu {
   padding: 50px;
 }
-// ?
 
 /* 
 Section Footer

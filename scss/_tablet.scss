@@ -64,17 +64,11 @@ Section One
 /* 
 Section Two
 */
-// all positioning is just for test - sizes, grid, margin and padding must be adjusted properly
 .section-two {
   display: grid;
   padding: 12.5px;
-  //grid-template-rows: repeat(12, minmax(0, 1fr));
   grid-template-rows: minmax(100px, max-content);
-  //align-items: baseline;
 
-  /* .one {
-    order: 2;
-  } */
   .two {
     order: 1;
   }
@@ -89,8 +83,6 @@ Section Two
     grid-column: 1 / span 3;
     grid-row: 1 / span 10;
     padding: 25px;
-    //width: 354px;
-    //margin: 20px auto;
     margin: 12.5px;
   }
 
@@ -109,11 +101,6 @@ Section Two
 
   #daily {
     grid-row: 1 / 2;
-    /* padding: 20px;
-    width: 354px;
-    height: 89px;
-    margin: 20px auto; */
-    //display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -125,10 +112,6 @@ Section Two
 
   #allergies {
     grid-row: 2 / span 3;
-    /* padding: 20px;
-    width: 345px;
-    height: 135px;
-    margin: 5px; */
     text-align: center;
     border-radius: 10px;
     background-color: $whiteSecondary;
@@ -139,9 +122,6 @@ Section Two
 
   #fresh {
     grid-row: 5 / 9;
-    /* padding: 20px;
-    width: 90%;
-    margin: 5px; */
     text-align: left;
     border-radius: 10px;
     background-color: $whiteSecondary;
@@ -150,9 +130,6 @@ Section Two
 
   #allDishes {
     grid-row: 9 / 11;
-    /* padding: 5px;
-    width: 90%;
-    margin: 20px auto; */
     text-align: center;
     border-radius: 10px;
     background-color: $whiteSecondary;
