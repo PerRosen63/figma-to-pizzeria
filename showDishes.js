@@ -22,7 +22,6 @@ function createMenuButton() {
   let menuButton = document.createElement("button");
   menuButton.classList.add("menu-button");
   let menuButtonText = document.createElement("p");
-  let menuButtonText = document.createElement("p");
   menuButtonText.textContent = "Meny";
   menuButton.appendChild(menuButtonText);
   return menuButton;
@@ -40,14 +39,12 @@ function createDailyContent() {
 function createAllergiesDiv() {
   let allergiesDiv = document.getElementById("allergies");
   let allergyText = document.createElement("h4");
-  let allergyText = document.createElement("h4");
   allergyText.textContent = "Allergier? Fråga oss:";
   allergiesDiv.appendChild(allergyText);
 
   let contactButton = document.createElement("button");
   contactButton.classList.add("contact-button");
 
-  let contactButtonText = document.createElement("p");
   let contactButtonText = document.createElement("p");
   contactButtonText.textContent = "Kontakt";
   contactButton.appendChild(contactButtonText);
