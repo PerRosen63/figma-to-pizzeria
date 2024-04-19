@@ -608,7 +608,8 @@ Cookie
   left: 10px;
   right: 10px;
   */
-  width: 100vw;
+  width: 100%;
+  max-width: 1440px;
   background-color: $whiteSecondary;
   padding: 10px;
   border-radius: 10px 10px 0 0;
