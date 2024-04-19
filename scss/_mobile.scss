@@ -140,6 +140,9 @@ header {
       padding: 0;
       li {
         margin: 0 10px;
+        a:hover {
+          color: $blueHover;
+        }
       }
     }
   }
