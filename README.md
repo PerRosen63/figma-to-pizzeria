@@ -24,36 +24,28 @@ We utilized GitHub Issues and Projects to organize our workflow. By defining tas
 
 ### Screenshots
 
+### Screenshots
+
 #### Mobile view
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 50%; padding: 5px;">
-    <img src="/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg" alt="mobile view with cookie bar" style="width: 400px">
-    <p><strong>mobile view with cookie bar</strong></p>
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg" alt="mobile view without cookie bar" style="width: 400px">
-    <p><strong>mobile view without cookie bar</strong></p>
-  </div>
-</div>
+![mobile view with cookie bar](/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg)
+**mobile view with cookie bar**
+
+![mobile view without cookie bar](/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg)
+**mobile view without cookie bar**
 
 #### Tablet view
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 50%; padding: 5px;">
-    <img src="/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg" alt="tablet view with cookie bar" style="width: 400px">
-    <p><strong>tablet view with cookie bar</strong></p>
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg" alt="tablet view without cookie bar" style="width: 400px">
-    <p><strong>tablet view without cookie bar</strong></p>
-  </div>
-</div>
+![tablet view with cookie bar](/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg)
+**tablet view with cookie bar**
+
+![tablet view without cookie bar](/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg)
+**tablet view without cookie bar**
 
 #### Desktop view
-<img src="relative/path/to/image.png" alt="desktop view with cookie bar" width="500px">
-<p><strong>desktop view with cookie bar</strong></p>
+![desktop view with cookie bar](/assets/Screenshots/Screen_shot_desktop_with_cookiebar-fullpage.jpg)
+**desktop view with cookie bar**
 
-<img src="relative/path/to/image.png" alt="desktop view without cookie bar" width="500px">
-<p><strong>desktop view without cookie bar</strong></p>
+![desktop view without cookie bar](/assets/Screenshots/Screen_shot_desktop_without_cookiebar-fullpage.jpg)
+**desktop view without cookie bar**
 
 ## Contributors
 
