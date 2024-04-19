@@ -23,19 +23,30 @@ We utilized GitHub Issues and Projects to organize our workflow. By defining tas
 - **Responsive Design:** Adapted elements' placement based on the platform, ensuring optimal viewing experience across different devices.
 
 ### Screenshots
-#### Mobile view
-<img src="/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg" alt="mobile view with cookie bar" width="300">
-<p><strong>mobile view with cookie bar</strong></p>
 
-<img src="/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg" alt="mobile view without cookie bar" width="300">
-<p><strong>mobile view without cookie bar</strong></p>
+#### Mobile view
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="flex: 50%; padding: 5px;">
+    <img src="/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg" alt="mobile view with cookie bar" style="width: 100%;">
+    <p><strong>mobile view with cookie bar</strong></p>
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg" alt="mobile view without cookie bar" style="width: 100%;">
+    <p><strong>mobile view without cookie bar</strong></p>
+  </div>
+</div>
 
 #### Tablet view
-<img src="/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg" alt="tablet view with cookie bar" width="400">
-<p><strong>tablet view with cookie bar</strong></p>
-
-<img src="/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg" alt="tablet view without cookie bar" width="400">
-<p><strong>tablet view without cookie bar</strong></p>
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="flex: 50%; padding: 5px;">
+    <img src="/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg" alt="tablet view with cookie bar" style="width: 100%;">
+    <p><strong>tablet view with cookie bar</strong></p>
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg" alt="tablet view without cookie bar" style="width: 100%;">
+    <p><strong>tablet view without cookie bar</strong></p>
+  </div>
+</div>
 
 #### Desktop view
 <img src="relative/path/to/image.png" alt="desktop view with cookie bar" width="600">
