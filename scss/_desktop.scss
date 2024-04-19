@@ -132,7 +132,73 @@ Section Three
 Section Food Menu
 */
 .section-menu {
-  padding: 50px;
+  padding-left: 230px;
+  padding-right: 150px;
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo-container {
+      margin: 0 auto; 
+      max-width: fit-content; 
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 25px;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 212px; 
+        height: 212px; 
+      }
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 40px; 
+      padding-right: 20px; 
+
+      .menu-item {
+        width: calc(50% - 15px);
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .menu-header {
+    position: sticky;
+    top: 200px;
+    left: 0;
+    margin-left: -230px;
+    margin-right: 20px;
+    z-index: 1;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    max-width: 220px; 
+  }
+
+  .menu-header ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    width: auto;
+    flex-grow: initial;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .menu-header li {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
 }
 
 /* 
@@ -143,7 +209,8 @@ Section Footer
 /* 
 Cookie
 */
+
 .cookieContainer {
-  width: 100vw;
+  max-width: 100%;
 }
 // Anna

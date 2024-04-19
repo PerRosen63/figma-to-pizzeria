@@ -71,13 +71,16 @@ function addAllDishesContent() {
 function createDishContainer(menuItem) {
   let dishContainer = document.createElement("div");
   dishContainer.classList.add("dish");
+
   let dishTitle = document.createElement("h4");
   dishTitle.textContent = menuItem.name;
+
   let dishDescription = document.createElement("p");
   dishDescription.textContent = menuItem.description;
 
   dishContainer.appendChild(dishTitle);
   dishContainer.appendChild(dishDescription);
+
 
   return dishContainer;
 }
@@ -89,14 +92,13 @@ export function showDishes() {
   recommendedDishesDiv.appendChild(heading);
 
   function appendDishes(dishes) {
-    console.log('Antal rätter att lägga till:', dishes.length);
     dishes.forEach(function (dishName) {
       let dish = menu
         .flatMap((category) => category.items)
         .find((item) => item.name === dishName);
       if (dish) {
-        let dishContainer = createDishContainer(dish);
-        recommendedDishesDiv.appendChild(dishContainer);
+        let dishWrapper = createDishContainer(dish);
+        recommendedDishesDiv.appendChild(dishWrapper);
       }
     });
   }
@@ -127,12 +129,14 @@ function showContentByPlatform() {
     addFreshContent();
     addAllDishesContent();
     //document.getElementById("allDishes").style.display = "block";
+    //document.getElementById("allDishes").style.display = "block";
   } else {
     showDishes();
     createDailyContent();
     createAllergiesDiv();
     addFreshContent();
     addAllDishesContent();
+    //document.getElementById("allDishes").style.display = "block";
     //document.getElementById("allDishes").style.display = "block";
   }
 }

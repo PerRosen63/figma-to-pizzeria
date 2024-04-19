@@ -302,7 +302,7 @@ Section Three
 Section Food Menu
 */
 .section-menu {
-  margin: -10px -20px;
+  margin: -15px -25px; 
 
   .menu-container {
     display: flex;
@@ -316,8 +316,18 @@ Section Food Menu
     .menu-item {
       width: calc(50% - 20px);
       box-sizing: border-box;
-    }
+
   }
+}
+
+.menu-header li {
+  font-size: 1.75rem;
+}
+
+.logo-container img {
+  width: 212px;
+  height: 212px;
+}
 }
 // Anna
 
