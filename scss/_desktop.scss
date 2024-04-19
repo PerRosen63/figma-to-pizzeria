@@ -175,7 +175,7 @@ Section Food Menu
       max-width: fit-content; 
       display: flex;
       justify-content: center;
-      margin-top: 35px;
+      margin-top: 5px;
       margin-bottom: 25px;
 
       img {
@@ -207,7 +207,7 @@ Section Food Menu
     margin-left: -230px;
     margin-right: 20px;
     z-index: 1;
-    display: flex;
+    display: inline-flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
