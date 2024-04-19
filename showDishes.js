@@ -38,7 +38,7 @@ function createDailyContent() {
 
 function createAllergiesDiv() {
   let allergiesDiv = document.getElementById("allergies");
-  let allergyText = document.createElement("h3");
+  let allergyText = document.createElement("h4");
   allergyText.textContent = "Allergier? Fråga oss:";
   allergiesDiv.appendChild(allergyText);
 
@@ -69,17 +69,24 @@ function addAllDishesContent() {
 }
 
 function createDishContainer(menuItem) {
+  let dishWrapper = document.createElement('div')
+  dishContainer.classList.add('dish-wrapper');
+
   let dishContainer = document.createElement("div");
   dishContainer.classList.add("dish");
-  let dishTitle = document.createElement("h3");
+
+  let dishTitle = document.createElement("h4");
   dishTitle.textContent = menuItem.name;
+
   let dishDescription = document.createElement("p");
   dishDescription.textContent = menuItem.description;
 
   dishContainer.appendChild(dishTitle);
   dishContainer.appendChild(dishDescription);
 
-  return dishContainer;
+  dishWrapper.appendChild(dishContainer);
+
+  return dishWrapper;
 }
 
 export function showDishes() {
@@ -89,14 +96,13 @@ export function showDishes() {
   recommendedDishesDiv.appendChild(heading);
 
   function appendDishes(dishes) {
-    console.log('Antal rätter att lägga till:', dishes.length);
     dishes.forEach(function (dishName) {
       let dish = menu
         .flatMap((category) => category.items)
         .find((item) => item.name === dishName);
       if (dish) {
-        let dishContainer = createDishContainer(dish);
-        recommendedDishesDiv.appendChild(dishContainer);
+        let dishWrapper = createDishContainer(dish);
+        recommendedDishesDiv.appendChild(dishWrapper);
       }
     });
   }
@@ -120,19 +126,20 @@ function showContentByPlatform() {
     createDailyContent();
     showDishes();
     createAllergiesDiv();
-
   } else if (windowWidth >= 768 && windowWidth < 1024) {
     showDishes();
     createDailyContent();
     createAllergiesDiv();
     addFreshContent();
     addAllDishesContent();
+    //document.getElementById("allDishes").style.display = "block";
   } else {
     showDishes();
     createDailyContent();
     createAllergiesDiv();
     addFreshContent();
     addAllDishesContent();
+    //document.getElementById("allDishes").style.display = "block";
   }
 }
 
