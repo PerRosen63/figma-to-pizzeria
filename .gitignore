@@ -22,12 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# ignore style.css.map
-*.css.map
-
-# ignore style-min.css
-*-min.css
-
-# ignore css
-*.css

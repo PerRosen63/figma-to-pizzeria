@@ -102,9 +102,6 @@ main {
 }
 
 section {
-  //height: calc(100vh - 12px);
-  //display: grid;
-  //grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
   background-color: $yellowPrimary;
   margin: 5px 0;
@@ -219,6 +216,10 @@ Section One
       padding-bottom: 5px;
       margin-bottom: 5%;
       border: none;
+      box-shadow: $boxShadow;
+      &:hover {
+        background-color: $blueHover;
+      }
     }
   }
 
@@ -226,7 +227,7 @@ Section One
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: $yellowPrimary;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0 0 10px 10px;
 
     .pizza-container {
       padding: 10px 6.5px 6.5px 10px;
@@ -262,7 +263,6 @@ Section One
       height: 135px;
       object-fit: cover;
 
-
       .hamburger {
         grid-column: 1 / span 1;
         object-fit: cover;
@@ -276,7 +276,6 @@ Section One
       width: 100%;
       height: 135px;
       object-fit: cover;
-
 
       .kebab {
         grid-column: 2 / span 1;
@@ -292,7 +291,6 @@ Section One
       height: 135px;
       object-fit: cover;
 
-
       .falafel {
         grid-column: 1 / span 1;
         object-fit: cover;
@@ -306,7 +304,6 @@ Section One
       width: 100%;
       height: 135px;
       object-fit: cover;
-
 
       .lambchop {
         grid-column: 2 / span 1;
