@@ -22,7 +22,6 @@ We utilized GitHub Issues and Projects to organize our workflow. By defining tas
 - **SVG Usage:** Incorporated SVG files for graphical elements, allowing color changes on hover and click events.
 - **Responsive Design:** Adapted elements' placement based on the platform, ensuring optimal viewing experience across different devices.
 
-### Screenshots
 
 ### Screenshots
 
@@ -37,7 +36,7 @@ We utilized GitHub Issues and Projects to organize our workflow. By defining tas
 ![tablet view with cookie bar](/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg)
 **tablet view with cookie bar**
 
-![tablet view without cookie bar](/assets/Screenshots/Screen_shot_tablet_without_cookiebar-fullpage.jpg)
+![tablet view without cookie bar](/assets/Screenshots/Screen_shot_tablet_without_cookiebar.jpg)
 **tablet view without cookie bar**
 
 #### Desktop view
