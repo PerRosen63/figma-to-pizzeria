@@ -69,9 +69,6 @@ function addAllDishesContent() {
 }
 
 function createDishContainer(menuItem) {
-  let dishWrapper = document.createElement('div')
-  dishContainer.classList.add('dish-wrapper');
-
   let dishContainer = document.createElement("div");
   dishContainer.classList.add("dish");
 
@@ -84,9 +81,8 @@ function createDishContainer(menuItem) {
   dishContainer.appendChild(dishTitle);
   dishContainer.appendChild(dishDescription);
 
-  dishWrapper.appendChild(dishContainer);
 
-  return dishWrapper;
+  return dishContainer;
 }
 
 export function showDishes() {
