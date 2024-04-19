@@ -259,6 +259,7 @@ Section One
       height: 135px;
       object-fit: cover;
 
+
       .hamburger {
         grid-column: 1 / span 1;
         object-fit: cover;
@@ -272,6 +273,7 @@ Section One
       width: 100%;
       height: 135px;
       object-fit: cover;
+
 
       .kebab {
         grid-column: 2 / span 1;
@@ -287,6 +289,7 @@ Section One
       height: 135px;
       object-fit: cover;
 
+
       .falafel {
         grid-column: 1 / span 1;
         object-fit: cover;
@@ -300,6 +303,7 @@ Section One
       width: 100%;
       height: 135px;
       object-fit: cover;
+
 
       .lambchop {
         grid-column: 2 / span 1;
@@ -318,30 +322,64 @@ Section Two
 
 //adjustments needed
 
-#recommendedDishes {
-  grid-column: span 2;
-  padding: 20px;
-  background-color: $whiteSecondary;
-  color: black;
-  border-radius: 10px;
-  margin: 10px;
-
-  p {
-    margin-bottom: 20px;
-    width: 80%;
+.section-two {
+  button p {
+    color: $whiteSecondary;
   }
-
-  h2 {
-    color: $bluePrimary;
-    padding: 10px;
-    width: 80%;
+  h3 {
+    color: $blackSecondary;
+    margin-bottom: 2px;
   }
-  .menu-button {
+  #recommendedDishes {
+    grid-column: span 2;
+    padding: 20px 10px;
+    background-color: $whiteSecondary;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+
+    h2 {
+      color: $bluePrimary;
+      margin-bottom: 20px;
+    }
+    .dish {
+      margin: 25px 0;
+    }
+
+    .menu-button {
+      background-color: $bluePrimary;
+      color: $whiteSecondary;
+      transition: background-color 0.3s;
+      width: 142px;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+      &:hover {
+        background-color: $blueHover;
+      }
+    }
+  }
+  #allergies {
+    grid-column: span 2;
+    background-color: $whiteSecondary;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px 10px 10px;
+  }
+  .contact-button {
     background-color: $bluePrimary;
     color: $whiteSecondary;
     transition: background-color 0.3s;
     width: 142px;
     height: 40px;
+    align-items: center;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
@@ -354,44 +392,20 @@ Section Two
       background-color: $blueHover;
     }
   }
-}
-#allergies {
-  grid-column: span 2;
-  background-color: $whiteSecondary;
-  text-align: center;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 0 10px 10px 10px;
-}
-.contact-button {
-  background-color: $bluePrimary;
-  color: $whiteSecondary;
-  transition: background-color 0.3s;
-  width: 142px;
-  height: 40px;
-  align-items: center;
-  border: none;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  #daily {
+    grid-column: span 2;
+    background-color: $whiteSecondary;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    margin: 10px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  &:hover {
-    background-color: $blueHover;
+    .h4 {
+      margin-right: 10px;
+    }
   }
-}
-#daily {
-  grid-column: span 2;
-  background-color: $whiteSecondary;
-  border-radius: 10px;
-  padding: 10px 30px 10px 30px;
-  margin: 10px 10px 0 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   .h4 {
     margin-right: 10px;
   }
@@ -536,6 +550,7 @@ Section Food Menu
 .section-menu {
   background-color: $whiteSecondary;
   border-radius: 0;
+  margin: -5px -10px;
   margin: -5px -10px;
   box-sizing: border-box;
   position: relative;
