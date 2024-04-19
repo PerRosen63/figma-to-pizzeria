@@ -26,25 +26,21 @@ We utilized GitHub Issues and Projects to organize our workflow. By defining tas
 ### Screenshots
 
 #### Mobile view
-![mobile view with cookie bar](/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg)
-**mobile view with cookie bar**
+![mobile view with cookie bar](/assets/Screenshots/Screen_shot_mobile_with_cookiebar-fullpage.jpg)  
+**mobile view**
 
-![mobile view without cookie bar](/assets/Screenshots/Screen_shot_mobile_without_cookiebar-fullpage.jpg)
-**mobile view without cookie bar**
+
 
 #### Tablet view
-![tablet view with cookie bar](/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg)
-**tablet view with cookie bar**
+![tablet view with cookie bar](/assets/Screenshots/Screen_shot_tablet_with_cookiebar-fullpage.jpg)  
+**tablet view**
 
-![tablet view without cookie bar](/assets/Screenshots/Screen_shot_tablet_without_cookiebar.jpg)
-**tablet view without cookie bar**
+
 
 #### Desktop view
-![desktop view with cookie bar](/assets/Screenshots/Screen_shot_desktop_with_cookiebar-fullpage.jpg)
-**desktop view with cookie bar**
+![desktop view with cookie bar](/assets/Screenshots/Screen_shot_desktop_with_cookiebar-fullpage.jpg)  
+**desktop view**
 
-![desktop view without cookie bar](/assets/Screenshots/Screen_shot_desktop_without_cookiebar-fullpage.jpg)
-**desktop view without cookie bar**
 
 ## Contributors
 
