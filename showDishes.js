@@ -21,7 +21,7 @@ const desktopDishes = [
 function createMenuButton() {
   let menuButton = document.createElement("button");
   menuButton.classList.add("menu-button");
-  let menuButtonText = document.createElement("h4");
+  let menuButtonText = document.createElement("p");
   menuButtonText.textContent = "Meny";
   menuButton.appendChild(menuButtonText);
   return menuButton;
@@ -38,14 +38,14 @@ function createDailyContent() {
 
 function createAllergiesDiv() {
   let allergiesDiv = document.getElementById("allergies");
-  let allergyText = document.createElement("h3");
+  let allergyText = document.createElement("h4");
   allergyText.textContent = "Allergier? Fråga oss:";
   allergiesDiv.appendChild(allergyText);
 
   let contactButton = document.createElement("button");
   contactButton.classList.add("contact-button");
 
-  let contactButtonText = document.createElement("h3");
+  let contactButtonText = document.createElement("p");
   contactButtonText.textContent = "Kontakt";
   contactButton.appendChild(contactButtonText);
   allergiesDiv.appendChild(contactButton);
@@ -71,7 +71,7 @@ function addAllDishesContent() {
 function createDishContainer(menuItem) {
   let dishContainer = document.createElement("div");
   dishContainer.classList.add("dish");
-  let dishTitle = document.createElement("h3");
+  let dishTitle = document.createElement("h4");
   dishTitle.textContent = menuItem.name;
   let dishDescription = document.createElement("p");
   dishDescription.textContent = menuItem.description;
@@ -126,14 +126,14 @@ function showContentByPlatform() {
     createAllergiesDiv();
     addFreshContent();
     addAllDishesContent();
-    document.getElementById("allDishes").style.display = "block";
+    //document.getElementById("allDishes").style.display = "block";
   } else {
     showDishes();
     createDailyContent();
     createAllergiesDiv();
     addFreshContent();
     addAllDishesContent();
-    document.getElementById("allDishes").style.display = "block";
+    //document.getElementById("allDishes").style.display = "block";
   }
 }
 
