@@ -7,7 +7,7 @@ export function renderMenu() {
     logoContainer.classList.add('logo-container');
 
     const svgLogo = document.createElement('img');
-    svgLogo.setAttribute('src', 'figma-to-pizzeria/assets/logotype.svg');
+    svgLogo.setAttribute('src', 'assets/logotype-scaled.svg');
     svgLogo.setAttribute('alt', 'Georgios Pizzeria Logo');
 
     logoContainer.appendChild(svgLogo);
